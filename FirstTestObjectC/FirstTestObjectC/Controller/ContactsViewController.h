@@ -1,0 +1,17 @@
+//
+//  ContactsViewController.h
+//  FirstTestObjectC
+//
+//  Created by Douglas Barreto on 12/21/15.
+//  Copyright © 2015 Douglas Barreto. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "NewContactViewController.h"
+
+@interface ContactsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, NewContactViewControllerDelegate>
+@property (nonatomic, strong) NSMutableArray *contacts;
+
+
+
+@end
