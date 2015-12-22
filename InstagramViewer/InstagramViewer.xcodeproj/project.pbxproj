@@ -108,16 +108,16 @@
 		A529C0A51C29B9EC00A40CE2 /* InstagramViewer */ = {
 			isa = PBXGroup;
 			children = (
-				A529C0F01C29DBD700A40CE2 /* novo */,
+				A529C0E01C29BBA900A40CE2 /* Resources */,
+				A529C0A61C29B9EC00A40CE2 /* Supporting Files */,
 				A529C0EC1C29DB9B00A40CE2 /* batata */,
+				A529C0F01C29DBD700A40CE2 /* novo */,
 				A529C0E41C29C85500A40CE2 /* AppDelegate.h */,
 				A529C0E51C29C85500A40CE2 /* AppDelegate.m */,
-				A529C0E01C29BBA900A40CE2 /* Resources */,
-				A529C0DC1C29BB2B00A40CE2 /* Classes */,
 				A529C0B51C29B9EC00A40CE2 /* Assets.xcassets */,
+				A529C0DC1C29BB2B00A40CE2 /* Classes */,
 				A529C0BA1C29B9EC00A40CE2 /* Info.plist */,
 				A529C0B21C29B9EC00A40CE2 /* InstagramViewer.xcdatamodeld */,
-				A529C0A61C29B9EC00A40CE2 /* Supporting Files */,
 			);
 			path = InstagramViewer;
 			sourceTree = "<group>";
@@ -127,14 +127,14 @@
 			children = (
 				A529C0A71C29B9EC00A40CE2 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		A529C0C21C29B9ED00A40CE2 /* InstagramViewerTests */ = {
 			isa = PBXGroup;
 			children = (
-				A529C0C31C29B9ED00A40CE2 /* InstagramViewerTests.m */,
 				A529C0C51C29B9ED00A40CE2 /* Info.plist */,
+				A529C0C31C29B9ED00A40CE2 /* InstagramViewerTests.m */,
 			);
 			path = InstagramViewerTests;
 			sourceTree = "<group>";
@@ -142,8 +142,8 @@
 		A529C0CD1C29B9ED00A40CE2 /* InstagramViewerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A529C0CE1C29B9ED00A40CE2 /* InstagramViewerUITests.m */,
 				A529C0D01C29B9ED00A40CE2 /* Info.plist */,
+				A529C0CE1C29B9ED00A40CE2 /* InstagramViewerUITests.m */,
 			);
 			path = InstagramViewerUITests;
 			sourceTree = "<group>";
@@ -151,10 +151,10 @@
 		A529C0E01C29BBA900A40CE2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A529C0B71C29B9EC00A40CE2 /* LaunchScreen.storyboard */,
 				A529C0EA1C29C9D300A40CE2 /* HomePageStoryBoard.storyboard */,
+				A529C0B71C29B9EC00A40CE2 /* LaunchScreen.storyboard */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A529C0EC1C29DB9B00A40CE2 /* batata */ = {
@@ -172,7 +172,7 @@
 				A529C0F11C29DBE400A40CE2 /* dsfdViewController.h */,
 				A529C0F21C29DBE400A40CE2 /* dsfdViewController.m */,
 			);
-			name = novo;
+			path = novo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +355,7 @@
 				A529C0B81C29B9EC00A40CE2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -533,6 +534,7 @@
 				A529C0D51C29B9ED00A40CE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A529C0D61C29B9ED00A40CE2 /* Build configuration list for PBXNativeTarget "InstagramViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +543,7 @@
 				A529C0D81C29B9ED00A40CE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A529C0D91C29B9ED00A40CE2 /* Build configuration list for PBXNativeTarget "InstagramViewerUITests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +552,7 @@
 				A529C0DB1C29B9ED00A40CE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
