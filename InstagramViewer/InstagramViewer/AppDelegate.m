@@ -17,7 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
     return YES;
+}
+
+-(void)meuMetodo:(NSString *)nome eMeuParametro:(NSString *)segundoParametro
+{
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

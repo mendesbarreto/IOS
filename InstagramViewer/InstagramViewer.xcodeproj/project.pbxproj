@@ -13,11 +13,10 @@
 		A529C0B91C29B9EC00A40CE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A529C0B71C29B9EC00A40CE2 /* LaunchScreen.storyboard */; };
 		A529C0C41C29B9ED00A40CE2 /* InstagramViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A529C0C31C29B9ED00A40CE2 /* InstagramViewerTests.m */; };
 		A529C0CF1C29B9ED00A40CE2 /* InstagramViewerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A529C0CE1C29B9ED00A40CE2 /* InstagramViewerUITests.m */; };
-		A529C0DD1C29BB2B00A40CE2 /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = A529C0DC1C29BB2B00A40CE2 /* Classes */; };
 		A529C0E61C29C85500A40CE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A529C0E51C29C85500A40CE2 /* AppDelegate.m */; };
-		A529C0EB1C29C9D300A40CE2 /* HomePageStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A529C0EA1C29C9D300A40CE2 /* HomePageStoryBoard.storyboard */; };
-		A529C0EF1C29DBC400A40CE2 /* batataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A529C0EE1C29DBC400A40CE2 /* batataViewController.m */; };
-		A529C0F31C29DBE400A40CE2 /* dsfdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A529C0F21C29DBE400A40CE2 /* dsfdViewController.m */; };
+		A529C10E1C2A0A2300A40CE2 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A529C10D1C2A0A2300A40CE2 /* HomePageViewController.m */; };
+		A529C1101C2A0B4E00A40CE2 /* HomePageStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A529C10F1C2A0B4E00A40CE2 /* HomePageStoryBoard.storyboard */; };
+		A529C1131C2A128900A40CE2 /* LoginUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = A529C1121C2A128900A40CE2 /* LoginUIView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,14 +49,13 @@
 		A529C0CA1C29B9ED00A40CE2 /* InstagramViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A529C0CE1C29B9ED00A40CE2 /* InstagramViewerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstagramViewerUITests.m; sourceTree = "<group>"; };
 		A529C0D01C29B9ED00A40CE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A529C0DC1C29BB2B00A40CE2 /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = "<group>"; };
 		A529C0E41C29C85500A40CE2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A529C0E51C29C85500A40CE2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A529C0EA1C29C9D300A40CE2 /* HomePageStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomePageStoryBoard.storyboard; sourceTree = "<group>"; };
-		A529C0ED1C29DBC400A40CE2 /* batataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = batataViewController.h; sourceTree = "<group>"; };
-		A529C0EE1C29DBC400A40CE2 /* batataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = batataViewController.m; sourceTree = "<group>"; };
-		A529C0F11C29DBE400A40CE2 /* dsfdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsfdViewController.h; sourceTree = "<group>"; };
-		A529C0F21C29DBE400A40CE2 /* dsfdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dsfdViewController.m; sourceTree = "<group>"; };
+		A529C10C1C2A0A2300A40CE2 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		A529C10D1C2A0A2300A40CE2 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		A529C10F1C2A0B4E00A40CE2 /* HomePageStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomePageStoryBoard.storyboard; sourceTree = "<group>"; };
+		A529C1111C2A128900A40CE2 /* LoginUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginUIView.h; sourceTree = "<group>"; };
+		A529C1121C2A128900A40CE2 /* LoginUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginUIView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,14 +106,12 @@
 		A529C0A51C29B9EC00A40CE2 /* InstagramViewer */ = {
 			isa = PBXGroup;
 			children = (
+				A529C0FA1C29ED8D00A40CE2 /* Classes */,
 				A529C0E01C29BBA900A40CE2 /* Resources */,
 				A529C0A61C29B9EC00A40CE2 /* Supporting Files */,
-				A529C0EC1C29DB9B00A40CE2 /* batata */,
-				A529C0F01C29DBD700A40CE2 /* novo */,
 				A529C0E41C29C85500A40CE2 /* AppDelegate.h */,
 				A529C0E51C29C85500A40CE2 /* AppDelegate.m */,
 				A529C0B51C29B9EC00A40CE2 /* Assets.xcassets */,
-				A529C0DC1C29BB2B00A40CE2 /* Classes */,
 				A529C0BA1C29B9EC00A40CE2 /* Info.plist */,
 				A529C0B21C29B9EC00A40CE2 /* InstagramViewer.xcdatamodeld */,
 			);
@@ -151,28 +147,45 @@
 		A529C0E01C29BBA900A40CE2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A529C0EA1C29C9D300A40CE2 /* HomePageStoryBoard.storyboard */,
 				A529C0B71C29B9EC00A40CE2 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		A529C0EC1C29DB9B00A40CE2 /* batata */ = {
+		A529C0FA1C29ED8D00A40CE2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A529C0FC1C29EDA200A40CE2 /* Controller */,
+				A529C0FD1C29EDAA00A40CE2 /* Model */,
+				A529C0FB1C29ED9900A40CE2 /* View */,
 			);
-			path = batata;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		A529C0F01C29DBD700A40CE2 /* novo */ = {
+		A529C0FB1C29ED9900A40CE2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A529C0ED1C29DBC400A40CE2 /* batataViewController.h */,
-				A529C0EE1C29DBC400A40CE2 /* batataViewController.m */,
-				A529C0F11C29DBE400A40CE2 /* dsfdViewController.h */,
-				A529C0F21C29DBE400A40CE2 /* dsfdViewController.m */,
+				A529C10F1C2A0B4E00A40CE2 /* HomePageStoryBoard.storyboard */,
+				A529C1111C2A128900A40CE2 /* LoginUIView.h */,
+				A529C1121C2A128900A40CE2 /* LoginUIView.m */,
 			);
-			path = novo;
+			path = View;
+			sourceTree = "<group>";
+		};
+		A529C0FC1C29EDA200A40CE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A529C10C1C2A0A2300A40CE2 /* HomePageViewController.h */,
+				A529C10D1C2A0A2300A40CE2 /* HomePageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A529C0FD1C29EDAA00A40CE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +276,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = A529C09A1C29B9EC00A40CE2;
 			productRefGroup = A529C0A41C29B9EC00A40CE2 /* Products */;
@@ -282,9 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A529C0B91C29B9EC00A40CE2 /* LaunchScreen.storyboard in Resources */,
-				A529C0DD1C29BB2B00A40CE2 /* Classes in Resources */,
 				A529C0B61C29B9EC00A40CE2 /* Assets.xcassets in Resources */,
-				A529C0EB1C29C9D300A40CE2 /* HomePageStoryBoard.storyboard in Resources */,
+				A529C1101C2A0B4E00A40CE2 /* HomePageStoryBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,11 +322,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A529C0F31C29DBE400A40CE2 /* dsfdViewController.m in Sources */,
 				A529C0E61C29C85500A40CE2 /* AppDelegate.m in Sources */,
-				A529C0EF1C29DBC400A40CE2 /* batataViewController.m in Sources */,
+				A529C10E1C2A0A2300A40CE2 /* HomePageViewController.m in Sources */,
 				A529C0B41C29B9EC00A40CE2 /* InstagramViewer.xcdatamodeld in Sources */,
 				A529C0A81C29B9EC00A40CE2 /* main.m in Sources */,
+				A529C1131C2A128900A40CE2 /* LoginUIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
