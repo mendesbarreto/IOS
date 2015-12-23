@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#
 
 @interface LoginUIView : UIView
 @property (weak, nonatomic)IBOutlet UITextField *usernameField;
