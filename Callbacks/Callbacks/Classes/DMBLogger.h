@@ -14,11 +14,13 @@
 }
 
 @property (nonatomic) NSDate *lastTime;
+
+
 -(NSString *) lastTimeString;
 -(void)updateLastTime:(NSTimer *) t;
-
 -(void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data;
 -(void) connectionDidFinishLoading:(NSURLConnection *)connection;
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error;
+-(void) timeZoneChanged:(NSNotification *)note;
 
 @end

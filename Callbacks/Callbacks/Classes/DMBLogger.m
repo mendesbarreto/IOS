@@ -66,4 +66,9 @@
     _incomingData = nil;
 }
 
+-(void) timeZoneChanged:(NSNotification *)note
+{
+    NSLog(@"The time change");
+}
+
 @end
