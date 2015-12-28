@@ -72,7 +72,7 @@
 				A52C3ED61C31622600DEFA17 /* DMBLogger.h */,
 				A52C3ED71C31622600DEFA17 /* DMBLogger.m */,
 			);
-			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +251,7 @@
 				A52C3ED51C31609900DEFA17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
