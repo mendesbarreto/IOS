@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A52C3EBA1C31459C00DEFA17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A52C3EB91C31459C00DEFA17 /* main.m */; };
+		A52C3EC21C314DC900DEFA17 /* SaveAndLoadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A52C3EC11C314DC900DEFA17 /* SaveAndLoadImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		A52C3EB61C31459C00DEFA17 /* ImageFetch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ImageFetch; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52C3EB91C31459C00DEFA17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A52C3EC01C314DC900DEFA17 /* SaveAndLoadImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveAndLoadImage.h; sourceTree = "<group>"; };
+		A52C3EC11C314DC900DEFA17 /* SaveAndLoadImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveAndLoadImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				A52C3EB91C31459C00DEFA17 /* main.m */,
+				A52C3EC01C314DC900DEFA17 /* SaveAndLoadImage.h */,
+				A52C3EC11C314DC900DEFA17 /* SaveAndLoadImage.m */,
 			);
 			path = ImageFetch;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A52C3EC21C314DC900DEFA17 /* SaveAndLoadImage.m in Sources */,
 				A52C3EBA1C31459C00DEFA17 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
