@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LoginUIView.h"
 
 @interface HomePageViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet LoginUIView *loginView;
+
 
 @end

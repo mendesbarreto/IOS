@@ -7,6 +7,8 @@
 //
 
 #import "HomePageViewController.h"
+#import "CatsTableViewController.h"
+
 
 @interface HomePageViewController ()
 
@@ -16,14 +18,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
+    [self.loginView.signInButton addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) buttonClicked:(UIButton *) sender
+{
+    NSLog(@"Hello I am herer");
+    
+    
 }
 
 /*
@@ -35,5 +44,4 @@
  // Pass the selected object to the new view controller.
  }
  */
-
 @end

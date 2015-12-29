@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
+#import <ParseCrashReporting.h>
+#import <ParseUI/ParseUI.h>
+#import <Bolts/Bolts.h>
+
 
 @interface AppDelegate ()
 
@@ -18,6 +23,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    // ****************************************************************************
+    // Parse initialization
+    [ParseCrashReporting enable];           
+    [Parse setApplicationId:@"gMqtzxg20nWlG27Ac5uCeFsJwhDevKGOUr3uJ4a2" clientKey:@"zKHuuKnVPhl0lfv8l1kJMVNY7KIsuXJOQlkr2DAW"];
+    // ****************************************************************************
+    
+    // Track app open.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     return YES;
 }

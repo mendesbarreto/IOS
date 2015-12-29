@@ -7,15 +7,27 @@
 //
 
 #import "LoginUIView.h"
+#import "CatsTableViewController.h"
 
 @implementation LoginUIView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+
+- (IBAction)onButtonSignInCLick:(UIButton *)sender
+{
+    //    CatsTableViewController * tb = [self.storyboard instantiateViewControllerWithIdentifier:@"CatsTableViewController"];
+    //    
+    //    if( tb )
+    //    {
+    //        
+    //    }
 }
-*/
+
+/*
+ // Only override drawRect: if you perform custom drawing.
+ // An empty implementation adversely affects performance during animation.
+ - (void)drawRect:(CGRect)rect {
+ // Drawing code
+ }
+ */
 
 @end
