@@ -11,41 +11,38 @@
 #import <ParseCrashReporting.h>
 #import <ParseUI/ParseUI.h>
 #import <Bolts/Bolts.h>
+#import "CatsTableViewCell.h"
 
 @interface CatsTableViewController ()
 
 @end
 
 @implementation CatsTableViewController
+static NSString *cellIdentifier = @"CatCell";
 
+- (void)customInit {
+    self.parseClassName = @"Cat";
+    self.pullToRefreshEnabled = YES;
+    self.paginationEnabled = YES;
+    self.objectsPerPage = 25;
+}
 
--(id) initWithStyle:(UITableViewStyle)style
-{
+- (id)initWithStyle:(UITableViewStyle)style {
     self = [super initWithStyle:style];
-    
     if (self) {
-        // Custom the table
-        
-        // The className to query on
-        self.parseClassName = @"CatsTableViewController";
-        
-        // The key of the PFObject to display in the label of the default cell style
-        self.textKey = @"text";
-        
-        // Uncomment the following line to specify the key of a PFFile on the PFObject to display in the imageView of the default cell style
-        // self.imageKey = @"image";
-        
-        // Whether the built-in pull-to-refresh is enabled
-        self.pullToRefreshEnabled = YES;
-        
-        // Whether the built-in pagination is enabled
-        self.paginationEnabled = YES;
-        
-        // The number of objects to show per page
-        self.objectsPerPage = 25;
+        [self customInit];
     }
     return self;
 }
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self customInit];
+    }
+    return self;
+}
+
 
 -(PFQuery *) queryForTable
 {
@@ -65,17 +62,25 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
                         object:(PFObject *)object {
-    static NSString *cellIdentifier = @"cell";
     
-    PFTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (!cell) {
-        cell = [[PFTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
-                                      reuseIdentifier:cellIdentifier];
+    CatsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (!cell)
+    {
+        //cell = [[CatsTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell = (CatsTableViewCell *) [[NSBundle mainBundle] loadNibNamed:@"CatsTableViewCell" owner:self options:nil][0];
     }
+    cell.catNameLabel.text = object[@"name"];
+    cell.catCreditLabel.text = object[@"cc_by"];
     
-    // Configure the cell to show todo item with a priority at the bottom
-    cell.textLabel.text = object[@"text"];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"Priority: %@",  object[@"priority"]];
+    NSObject *votes = object[@"votes"];
+    NSString *votesStr = [NSString stringWithFormat:@"%@",votes];
+    cell.catVotesLabel.text = votesStr;
+    
+    NSString *urlStr = object[@"url"];
+    NSURL *url = [[NSURL alloc] initWithString:urlStr];
+    cell.catImageView.image = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:url]];
+    //[UIImage imageNamed:@"placeholder.jpg"];
+    //cell.imageView.file = thumbnail;
     
     return cell;
 }
@@ -83,8 +88,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
+    self.tableView.rowHeight = 350;
+    self.tableView.allowsSelection = false;
+    [self.tableView registerNib:[UINib nibWithNibName:@"CatsTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:cellIdentifier];
 }
 
 - (void)didReceiveMemoryWarning {

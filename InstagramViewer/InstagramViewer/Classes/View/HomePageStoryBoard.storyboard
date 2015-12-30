@@ -9,18 +9,18 @@
         <!--Navigation Controller-->
         <scene sceneID="uC6-U8-fGE">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GfY-nE-7qe" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="Joz-d0-VJT" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vEy-Ah-vCD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="24j-6g-7fc" kind="relationship" relationship="rootViewController" id="QfR-XT-3ei"/>
+                        <segue destination="24j-6g-7fc" kind="relationship" relationship="rootViewController" id="eUi-vN-p0G"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GfY-nE-7qe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-156" y="444"/>
+            <point key="canvasLocation" x="-188" y="520"/>
         </scene>
         <!--Home Page View Controller-->
         <scene sceneID="U0a-62-tbb">
@@ -78,9 +78,6 @@
                                         <state key="normal" title="sign in">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="P5R-sT-Duh" kind="push" id="CEZ-mm-Xp0"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <connections>
@@ -127,7 +124,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4uE-by-8zD">
-                                <rect key="frame" x="0.0" y="92" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4uE-by-8zD" id="JlN-5U-zkB">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>

@@ -31,7 +31,9 @@
 -(void) buttonClicked:(UIButton *) sender
 {
     NSLog(@"Hello I am herer");
+    CatsTableViewController *tb = [self.storyboard instantiateViewControllerWithIdentifier:@"CatsTableViewController"];
     
+    [self.navigationController pushViewController:tb animated:YES];
     
 }
 

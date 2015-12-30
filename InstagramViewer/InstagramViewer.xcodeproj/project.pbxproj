@@ -20,6 +20,8 @@
 		A529C1131C2A128900A40CE2 /* LoginUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = A529C1121C2A128900A40CE2 /* LoginUIView.m */; };
 		A577A6BA1C32DF5C00F7F3A0 /* CatsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A577A6B91C32DF5C00F7F3A0 /* CatsTableViewController.m */; };
 		A5F34E341C32B49300D139E1 /* AppInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F34E331C32B49300D139E1 /* AppInformation.m */; };
+		A5FDF02D1C348DE900A23A37 /* CatsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FDF02B1C348DE900A23A37 /* CatsTableViewCell.m */; };
+		A5FDF02E1C348DE900A23A37 /* CatsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5FDF02C1C348DE900A23A37 /* CatsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,9 @@
 		A577A6B91C32DF5C00F7F3A0 /* CatsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatsTableViewController.m; sourceTree = "<group>"; };
 		A5F34E321C32B49300D139E1 /* AppInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInformation.h; sourceTree = "<group>"; };
 		A5F34E331C32B49300D139E1 /* AppInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInformation.m; sourceTree = "<group>"; };
+		A5FDF02A1C348DE900A23A37 /* CatsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatsTableViewCell.h; sourceTree = "<group>"; };
+		A5FDF02B1C348DE900A23A37 /* CatsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatsTableViewCell.m; sourceTree = "<group>"; };
+		A5FDF02C1C348DE900A23A37 /* CatsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CatsTableViewCell.xib; sourceTree = "<group>"; };
 		EAED6E75F483D738E7913EEE /* Pods-InstagramViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramViewer/Pods-InstagramViewer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,6 +198,9 @@
 				A529C1121C2A128900A40CE2 /* LoginUIView.m */,
 				A577A6B81C32DF5C00F7F3A0 /* CatsTableViewController.h */,
 				A577A6B91C32DF5C00F7F3A0 /* CatsTableViewController.m */,
+				A5FDF02A1C348DE900A23A37 /* CatsTableViewCell.h */,
+				A5FDF02B1C348DE900A23A37 /* CatsTableViewCell.m */,
+				A5FDF02C1C348DE900A23A37 /* CatsTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5FDF02E1C348DE900A23A37 /* CatsTableViewCell.xib in Resources */,
 				A529C0B91C29B9EC00A40CE2 /* LaunchScreen.storyboard in Resources */,
 				A529C0B61C29B9EC00A40CE2 /* Assets.xcassets in Resources */,
 				A529C1101C2A0B4E00A40CE2 /* HomePageStoryBoard.storyboard in Resources */,
@@ -419,6 +428,7 @@
 				A5F34E341C32B49300D139E1 /* AppInformation.m in Sources */,
 				A529C0E61C29C85500A40CE2 /* AppDelegate.m in Sources */,
 				A529C10E1C2A0A2300A40CE2 /* HomePageViewController.m in Sources */,
+				A5FDF02D1C348DE900A23A37 /* CatsTableViewCell.m in Sources */,
 				A529C0B41C29B9EC00A40CE2 /* InstagramViewer.xcdatamodeld in Sources */,
 				A529C0A81C29B9EC00A40CE2 /* main.m in Sources */,
 				A529C1131C2A128900A40CE2 /* LoginUIView.m in Sources */,
@@ -557,6 +567,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InstagramViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.douglasmendes.InstagramViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -570,6 +581,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InstagramViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.douglasmendes.InstagramViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
