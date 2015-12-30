@@ -34,11 +34,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="JLV-zO-vfc">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="JLV-zO-vfc">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Au-yq-4hK" userLabel="LoginView" customClass="LoginUIView">
-                                <rect key="frame" x="20" y="259" width="374" height="272"/>
+                                <rect key="frame" x="20" y="259" width="360" height="272"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BSI-z1-vYH" userLabel="passwordView">
                                         <rect key="frame" x="0.0" y="87" width="374" height="99"/>
@@ -50,7 +50,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1N4-5W-sVr">
-                                                <rect key="frame" x="1" y="35" width="374" height="30"/>
+                                                <rect key="frame" x="1" y="35" width="348" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -66,7 +66,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KLW-M1-2dp">
-                                                <rect key="frame" x="0.0" y="39" width="374" height="30"/>
+                                                <rect key="frame" x="0.0" y="42" width="350" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -78,6 +78,9 @@
                                         <state key="normal" title="sign in">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="P5R-sT-Duh" kind="push" id="CEZ-mm-Xp0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <connections>
@@ -96,6 +99,14 @@
                         <color key="backgroundColor" red="0.47982341051101685" green="0.68407392501831055" blue="0.62301266193389893" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="JLV-zO-vfc" firstAttribute="leading" secondItem="09G-yk-sLr" secondAttribute="leadingMargin" constant="134" id="BJv-Nb-5df"/>
+                            <constraint firstItem="JLV-zO-vfc" firstAttribute="top" secondItem="09G-yk-sLr" secondAttribute="top" id="HJP-VI-vUT"/>
+                            <constraint firstItem="JLV-zO-vfc" firstAttribute="top" secondItem="09G-yk-sLr" secondAttribute="topMargin" id="OsM-YW-KCz"/>
+                            <constraint firstItem="6xw-uc-JYN" firstAttribute="top" secondItem="JLV-zO-vfc" secondAttribute="bottom" id="QO6-kV-h2o"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JLV-zO-vfc" secondAttribute="trailing" constant="-20" id="VIU-95-bjQ"/>
+                            <constraint firstItem="JLV-zO-vfc" firstAttribute="leading" secondItem="09G-yk-sLr" secondAttribute="leading" id="Xml-aw-1uj"/>
+                            <constraint firstItem="6xw-uc-JYN" firstAttribute="top" secondItem="JLV-zO-vfc" secondAttribute="bottom" id="bQB-Wp-75o"/>
+                            <constraint firstItem="JLV-zO-vfc" firstAttribute="leading" secondItem="09G-yk-sLr" secondAttribute="leadingMargin" constant="-20" id="jcK-1H-q3S"/>
+                            <constraint firstAttribute="trailing" secondItem="JLV-zO-vfc" secondAttribute="trailing" id="sRR-MX-LkD"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -124,7 +135,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4uE-by-8zD">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4uE-by-8zD" id="JlN-5U-zkB">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
