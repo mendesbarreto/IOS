@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "DMBHypnosisViewController.h"
+#import "DMBReminderViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,30 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    //Creating variable to get bouds and instance window
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    UIWindow *newWindow = [[UIWindow alloc] initWithFrame:screenBounds];
+    //Get and point to main bundle
+    NSBundle *bundle = [NSBundle mainBundle];
+    
+    
+    //Now we will create a rootcontroller
+    DMBHypnosisViewController *hipViewController = [[DMBHypnosisViewController alloc] init];
+    DMBReminderViewController *reminderViewController = [[DMBReminderViewController alloc] initWithNibName:@"DMBReminderViewController" bundle:bundle];
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[hipViewController, reminderViewController];
+    
+    
+    //Insert a root controller in new window
+    //newWindow.rootViewController = rootViewController;
+    newWindow.rootViewController = tabBarController;
+    
+    
+    //Setting new window
+    self.window = newWindow;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

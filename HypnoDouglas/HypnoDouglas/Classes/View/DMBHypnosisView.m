@@ -23,6 +23,7 @@
     
     if(self)
     {
+        
         self.backgroundColor = [UIColor clearColor];
         self.circleColor = [UIColor blackColor];
         

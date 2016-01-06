@@ -9,15 +9,14 @@
 /* Begin PBXBuildFile section */
 		A567AAD51C3DA83B00998197 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A567AAD41C3DA83B00998197 /* main.m */; };
 		A567AAD81C3DA83B00998197 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A567AAD71C3DA83B00998197 /* AppDelegate.m */; };
-		A567AADB1C3DA83B00998197 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A567AADA1C3DA83B00998197 /* ViewController.m */; };
-		A567AADE1C3DA83B00998197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A567AADC1C3DA83B00998197 /* Main.storyboard */; };
 		A567AAE11C3DA83B00998197 /* HypnoDouglas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A567AADF1C3DA83B00998197 /* HypnoDouglas.xcdatamodeld */; };
 		A567AAE31C3DA83B00998197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A567AAE21C3DA83B00998197 /* Assets.xcassets */; };
-		A567AAE61C3DA83B00998197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A567AAE41C3DA83B00998197 /* LaunchScreen.storyboard */; };
 		A567AAF11C3DA83B00998197 /* HypnoDouglasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A567AAF01C3DA83B00998197 /* HypnoDouglasTests.m */; };
 		A567AAFC1C3DA83B00998197 /* HypnoDouglasUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A567AAFB1C3DA83B00998197 /* HypnoDouglasUITests.m */; };
 		A567AB0D1C3DA9A100998197 /* DMBHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = A567AB0A1C3DA9A100998197 /* DMBHypnosisView.m */; };
-		A567AB0E1C3DA9A100998197 /* DMBHypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A567AB0C1C3DA9A100998197 /* DMBHypnosisViewController.m */; };
+		A567AB121C3DAAC000998197 /* DMBHypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A567AB111C3DAAC000998197 /* DMBHypnosisViewController.m */; };
+		A573472B1C3DB7EC000E0267 /* DMBReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A573472A1C3DB7EC000E0267 /* DMBReminderViewController.m */; };
+		A573472D1C3DB935000E0267 /* DMBReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A573472C1C3DB935000E0267 /* DMBReminderViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,12 +41,8 @@
 		A567AAD41C3DA83B00998197 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A567AAD61C3DA83B00998197 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A567AAD71C3DA83B00998197 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A567AAD91C3DA83B00998197 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A567AADA1C3DA83B00998197 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A567AADD1C3DA83B00998197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A567AAE01C3DA83B00998197 /* HypnoDouglas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HypnoDouglas.xcdatamodel; sourceTree = "<group>"; };
 		A567AAE21C3DA83B00998197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A567AAE51C3DA83B00998197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A567AAE71C3DA83B00998197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A567AAEC1C3DA83B00998197 /* HypnoDouglasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypnoDouglasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A567AAF01C3DA83B00998197 /* HypnoDouglasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnoDouglasTests.m; sourceTree = "<group>"; };
@@ -57,8 +52,11 @@
 		A567AAFD1C3DA83B00998197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A567AB091C3DA9A100998197 /* DMBHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMBHypnosisView.h; sourceTree = "<group>"; };
 		A567AB0A1C3DA9A100998197 /* DMBHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMBHypnosisView.m; sourceTree = "<group>"; };
-		A567AB0B1C3DA9A100998197 /* DMBHypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMBHypnosisViewController.h; sourceTree = "<group>"; };
-		A567AB0C1C3DA9A100998197 /* DMBHypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMBHypnosisViewController.m; sourceTree = "<group>"; };
+		A567AB101C3DAAC000998197 /* DMBHypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMBHypnosisViewController.h; sourceTree = "<group>"; };
+		A567AB111C3DAAC000998197 /* DMBHypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMBHypnosisViewController.m; sourceTree = "<group>"; };
+		A57347291C3DB7EC000E0267 /* DMBReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMBReminderViewController.h; sourceTree = "<group>"; };
+		A573472A1C3DB7EC000E0267 /* DMBReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMBReminderViewController.m; sourceTree = "<group>"; };
+		A573472C1C3DB935000E0267 /* DMBReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DMBReminderViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,10 +114,6 @@
 				A567AAE21C3DA83B00998197 /* Assets.xcassets */,
 				A567AADF1C3DA83B00998197 /* HypnoDouglas.xcdatamodeld */,
 				A567AAE71C3DA83B00998197 /* Info.plist */,
-				A567AAE41C3DA83B00998197 /* LaunchScreen.storyboard */,
-				A567AADC1C3DA83B00998197 /* Main.storyboard */,
-				A567AAD91C3DA83B00998197 /* ViewController.h */,
-				A567AADA1C3DA83B00998197 /* ViewController.m */,
 			);
 			path = HypnoDouglas;
 			sourceTree = "<group>";
@@ -153,12 +147,31 @@
 		A567AB0F1C3DA9AA00998197 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A567AB091C3DA9A100998197 /* DMBHypnosisView.h */,
-				A567AB0A1C3DA9A100998197 /* DMBHypnosisView.m */,
-				A567AB0B1C3DA9A100998197 /* DMBHypnosisViewController.h */,
-				A567AB0C1C3DA9A100998197 /* DMBHypnosisViewController.m */,
+				A57347281C3DB79F000E0267 /* Controller */,
+				A57347271C3DB787000E0267 /* View */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		A57347271C3DB787000E0267 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A567AB091C3DA9A100998197 /* DMBHypnosisView.h */,
+				A567AB0A1C3DA9A100998197 /* DMBHypnosisView.m */,
+				A573472C1C3DB935000E0267 /* DMBReminderViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A57347281C3DB79F000E0267 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A567AB101C3DAAC000998197 /* DMBHypnosisViewController.h */,
+				A567AB111C3DAAC000998197 /* DMBHypnosisViewController.m */,
+				A57347291C3DB7EC000E0267 /* DMBReminderViewController.h */,
+				A573472A1C3DB7EC000E0267 /* DMBReminderViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +236,7 @@
 		A567AAC81C3DA83B00998197 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DMB;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Douglas Mendes";
 				TargetAttributes = {
@@ -267,9 +281,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A567AAE61C3DA83B00998197 /* LaunchScreen.storyboard in Resources */,
+				A573472D1C3DB935000E0267 /* DMBReminderViewController.xib in Resources */,
 				A567AAE31C3DA83B00998197 /* Assets.xcassets in Resources */,
-				A567AADE1C3DA83B00998197 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,12 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A567AADB1C3DA83B00998197 /* ViewController.m in Sources */,
+				A573472B1C3DB7EC000E0267 /* DMBReminderViewController.m in Sources */,
 				A567AAD81C3DA83B00998197 /* AppDelegate.m in Sources */,
 				A567AAE11C3DA83B00998197 /* HypnoDouglas.xcdatamodeld in Sources */,
 				A567AAD51C3DA83B00998197 /* main.m in Sources */,
 				A567AB0D1C3DA9A100998197 /* DMBHypnosisView.m in Sources */,
-				A567AB0E1C3DA9A100998197 /* DMBHypnosisViewController.m in Sources */,
+				A567AB121C3DAAC000998197 /* DMBHypnosisViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,27 +346,6 @@
 			targetProxy = A567AAF81C3DA83B00998197 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		A567AADC1C3DA83B00998197 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A567AADD1C3DA83B00998197 /* Base */,
-			);
-			name = Main.storyboard;
-			path = .;
-			sourceTree = "<group>";
-		};
-		A567AAE41C3DA83B00998197 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A567AAE51C3DA83B00998197 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			path = .;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A567AAFE1C3DA83B00998197 /* Debug */ = {
