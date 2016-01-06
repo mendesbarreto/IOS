@@ -16,6 +16,8 @@
 		A567AAE61C3DA83B00998197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A567AAE41C3DA83B00998197 /* LaunchScreen.storyboard */; };
 		A567AAF11C3DA83B00998197 /* HypnoDouglasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A567AAF01C3DA83B00998197 /* HypnoDouglasTests.m */; };
 		A567AAFC1C3DA83B00998197 /* HypnoDouglasUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A567AAFB1C3DA83B00998197 /* HypnoDouglasUITests.m */; };
+		A567AB0D1C3DA9A100998197 /* DMBHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = A567AB0A1C3DA9A100998197 /* DMBHypnosisView.m */; };
+		A567AB0E1C3DA9A100998197 /* DMBHypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A567AB0C1C3DA9A100998197 /* DMBHypnosisViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		A567AAF71C3DA83B00998197 /* HypnoDouglasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypnoDouglasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A567AAFB1C3DA83B00998197 /* HypnoDouglasUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnoDouglasUITests.m; sourceTree = "<group>"; };
 		A567AAFD1C3DA83B00998197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A567AB091C3DA9A100998197 /* DMBHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMBHypnosisView.h; sourceTree = "<group>"; };
+		A567AB0A1C3DA9A100998197 /* DMBHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMBHypnosisView.m; sourceTree = "<group>"; };
+		A567AB0B1C3DA9A100998197 /* DMBHypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMBHypnosisViewController.h; sourceTree = "<group>"; };
+		A567AB0C1C3DA9A100998197 /* DMBHypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMBHypnosisViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,16 +109,17 @@
 		A567AAD21C3DA83B00998197 /* HypnoDouglas */ = {
 			isa = PBXGroup;
 			children = (
+				A567AB0F1C3DA9AA00998197 /* Classes */,
+				A567AAD31C3DA83B00998197 /* Supporting Files */,
 				A567AAD61C3DA83B00998197 /* AppDelegate.h */,
 				A567AAD71C3DA83B00998197 /* AppDelegate.m */,
+				A567AAE21C3DA83B00998197 /* Assets.xcassets */,
+				A567AADF1C3DA83B00998197 /* HypnoDouglas.xcdatamodeld */,
+				A567AAE71C3DA83B00998197 /* Info.plist */,
+				A567AAE41C3DA83B00998197 /* LaunchScreen.storyboard */,
+				A567AADC1C3DA83B00998197 /* Main.storyboard */,
 				A567AAD91C3DA83B00998197 /* ViewController.h */,
 				A567AADA1C3DA83B00998197 /* ViewController.m */,
-				A567AADC1C3DA83B00998197 /* Main.storyboard */,
-				A567AAE21C3DA83B00998197 /* Assets.xcassets */,
-				A567AAE41C3DA83B00998197 /* LaunchScreen.storyboard */,
-				A567AAE71C3DA83B00998197 /* Info.plist */,
-				A567AADF1C3DA83B00998197 /* HypnoDouglas.xcdatamodeld */,
-				A567AAD31C3DA83B00998197 /* Supporting Files */,
 			);
 			path = HypnoDouglas;
 			sourceTree = "<group>";
@@ -122,7 +129,7 @@
 			children = (
 				A567AAD41C3DA83B00998197 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		A567AAEF1C3DA83B00998197 /* HypnoDouglasTests */ = {
@@ -141,6 +148,17 @@
 				A567AAFD1C3DA83B00998197 /* Info.plist */,
 			);
 			path = HypnoDouglasUITests;
+			sourceTree = "<group>";
+		};
+		A567AB0F1C3DA9AA00998197 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A567AB091C3DA9A100998197 /* DMBHypnosisView.h */,
+				A567AB0A1C3DA9A100998197 /* DMBHypnosisView.m */,
+				A567AB0B1C3DA9A100998197 /* DMBHypnosisViewController.h */,
+				A567AB0C1C3DA9A100998197 /* DMBHypnosisViewController.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +298,8 @@
 				A567AAD81C3DA83B00998197 /* AppDelegate.m in Sources */,
 				A567AAE11C3DA83B00998197 /* HypnoDouglas.xcdatamodeld in Sources */,
 				A567AAD51C3DA83B00998197 /* main.m in Sources */,
+				A567AB0D1C3DA9A100998197 /* DMBHypnosisView.m in Sources */,
+				A567AB0E1C3DA9A100998197 /* DMBHypnosisViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +341,7 @@
 				A567AADD1C3DA83B00998197 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		A567AAE41C3DA83B00998197 /* LaunchScreen.storyboard */ = {
@@ -329,6 +350,7 @@
 				A567AAE51C3DA83B00998197 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -503,6 +525,7 @@
 				A567AB021C3DA83B00998197 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A567AB031C3DA83B00998197 /* Build configuration list for PBXNativeTarget "HypnoDouglasTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +534,7 @@
 				A567AB051C3DA83B00998197 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A567AB061C3DA83B00998197 /* Build configuration list for PBXNativeTarget "HypnoDouglasUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +543,7 @@
 				A567AB081C3DA83B00998197 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
