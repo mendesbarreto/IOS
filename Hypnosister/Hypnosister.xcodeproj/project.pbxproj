@@ -103,12 +103,12 @@
 			isa = PBXGroup;
 			children = (
 				A567AAC01C3C817100998197 /* Classes */,
+				A567AA8A1C3C7F0F00998197 /* Supporting Files */,
 				A567AA8D1C3C7F0F00998197 /* AppDelegate.h */,
 				A567AA8E1C3C7F0F00998197 /* AppDelegate.m */,
 				A567AA991C3C7F0F00998197 /* Assets.xcassets */,
-				A567AA9E1C3C7F0F00998197 /* Info.plist */,
 				A567AA961C3C7F0F00998197 /* Hypnosister.xcdatamodeld */,
-				A567AA8A1C3C7F0F00998197 /* Supporting Files */,
+				A567AA9E1C3C7F0F00998197 /* Info.plist */,
 			);
 			path = Hypnosister;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			children = (
 				A567AA8B1C3C7F0F00998197 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		A567AAA61C3C7F0F00998197 /* HypnosisterTests */ = {
@@ -147,7 +147,7 @@
 				A567AAC41C3D6EC000998197 /* DMBHypnosisViewController.h */,
 				A567AAC51C3D6EC000998197 /* DMBHypnosisViewController.m */,
 			);
-			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
