@@ -10,8 +10,6 @@
 
 @interface DMBHypnosisView : UIView
 
-- (void)drawRect:(CGRect)rect;
-- (void)drawCircle:(CGRect)circle;
-
+-(void)changeStrokeColorFromCircle;
 
 @end

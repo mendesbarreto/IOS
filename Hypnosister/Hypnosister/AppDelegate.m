@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DMBHypnosisView.h"
+#import "DMBHypnosisViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,22 +16,47 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    CGRect rect = [[UIScreen mainScreen] bounds];
-    UIWindow *windows = [[UIWindow alloc] initWithFrame:rect];
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    CGSize maxSize = screenBounds.size;
+    UIWindow *window = [[UIWindow alloc] initWithFrame:screenBounds];
     
-    DMBHypnosisView *view = [[DMBHypnosisView alloc] init];
-    [self.window  addSubview:view];
+    maxSize.width *= 2.0;
     
+    self.window = window;
     self.window.backgroundColor = [UIColor whiteColor];
     
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:screenBounds];
+    scrollView.contentSize = maxSize;
+    
+    
+    DMBHypnosisViewController *rootController = [[DMBHypnosisViewController alloc] init];
+    DMBHypnosisView* dmbView = [[DMBHypnosisView alloc] initWithFrame:screenBounds];
+    dmbView.backgroundColor = [UIColor clearColor];
+    [scrollView addSubview:dmbView];
+    
+    screenBounds.origin.x += screenBounds.size.width;
+    
+    DMBHypnosisView* anotherDmbView = [[DMBHypnosisView alloc] initWithFrame:screenBounds];
+    anotherDmbView.backgroundColor = [UIColor clearColor];
+    [scrollView addSubview:anotherDmbView];
+    
+    [rootController.view addSubview:scrollView];
+    [self.window setRootViewController:rootController];
     [self.window makeKeyAndVisible];
     
+    //    CGRect rect = [[UIScreen mainScreen] bounds];
+    //    UIWindow *windows = [[UIWindow alloc] initWithFrame:rect];
+    //    DMBHypnosisView *view = [[DMBHypnosisView alloc] init];
+    //    view.backgroundColor = [UIColor redColor];
+    //    [self.window  addSubview:view];
+    //    self.window.backgroundColor = [UIColor redColor];
+    //    [self.window makeKeyAndVisible];
     
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
