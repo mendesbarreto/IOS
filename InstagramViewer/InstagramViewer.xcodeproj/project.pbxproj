@@ -18,6 +18,7 @@
 		A529C10E1C2A0A2300A40CE2 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A529C10D1C2A0A2300A40CE2 /* HomePageViewController.m */; };
 		A529C1101C2A0B4E00A40CE2 /* HomePageStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A529C10F1C2A0B4E00A40CE2 /* HomePageStoryBoard.storyboard */; };
 		A529C1131C2A128900A40CE2 /* LoginUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = A529C1121C2A128900A40CE2 /* LoginUIView.m */; };
+		A57347331C3EC145000E0267 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57347321C3EC145000E0267 /* ExternalAccessory.framework */; };
 		A577A6BA1C32DF5C00F7F3A0 /* CatsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A577A6B91C32DF5C00F7F3A0 /* CatsTableViewController.m */; };
 		A5F34E341C32B49300D139E1 /* AppInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F34E331C32B49300D139E1 /* AppInformation.m */; };
 		A5FDF02D1C348DE900A23A37 /* CatsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FDF02B1C348DE900A23A37 /* CatsTableViewCell.m */; };
@@ -63,6 +64,8 @@
 		A529C10F1C2A0B4E00A40CE2 /* HomePageStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomePageStoryBoard.storyboard; sourceTree = "<group>"; };
 		A529C1111C2A128900A40CE2 /* LoginUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginUIView.h; sourceTree = "<group>"; };
 		A529C1121C2A128900A40CE2 /* LoginUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginUIView.m; sourceTree = "<group>"; };
+		A57347321C3EC145000E0267 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		A57347341C3EC145000E0267 /* InstagramViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = InstagramViewer.entitlements; sourceTree = "<group>"; };
 		A577A6B81C32DF5C00F7F3A0 /* CatsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatsTableViewController.h; sourceTree = "<group>"; };
 		A577A6B91C32DF5C00F7F3A0 /* CatsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatsTableViewController.m; sourceTree = "<group>"; };
 		A5F34E321C32B49300D139E1 /* AppInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInformation.h; sourceTree = "<group>"; };
@@ -78,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A57347331C3EC145000E0267 /* ExternalAccessory.framework in Frameworks */,
 				7DF37433DAA3A4B505EEBB3A /* libPods-InstagramViewer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +137,7 @@
 		A529C0A51C29B9EC00A40CE2 /* InstagramViewer */ = {
 			isa = PBXGroup;
 			children = (
+				A57347341C3EC145000E0267 /* InstagramViewer.entitlements */,
 				A529C0FA1C29ED8D00A40CE2 /* Classes */,
 				A529C0E01C29BBA900A40CE2 /* Resources */,
 				A529C0A61C29B9EC00A40CE2 /* Supporting Files */,
@@ -233,6 +238,7 @@
 		BE1C004F672CA693CBEE5798 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A57347321C3EC145000E0267 /* ExternalAccessory.framework */,
 				9A30852CF1DF8651E42B02DF /* libPods-InstagramViewer.a */,
 			);
 			name = Frameworks;
@@ -309,6 +315,11 @@
 					A529C0A21C29B9EC00A40CE2 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = WQVLGGBH98;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
 					};
 					A529C0BE1C29B9ED00A40CE2 = {
 						CreatedOnToolsVersion = 7.2;
@@ -566,11 +577,15 @@
 			baseConfigurationReference = 4FB71B95EB449CA352C36A8F /* Pods-InstagramViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = InstagramViewer/InstagramViewer.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = InstagramViewer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.douglasmendes.InstagramViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -580,11 +595,15 @@
 			baseConfigurationReference = EAED6E75F483D738E7913EEE /* Pods-InstagramViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = InstagramViewer/InstagramViewer.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = InstagramViewer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.douglasmendes.InstagramViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A84A475AA51A5F0395165A7 /* libPods-HearthstoneCards.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7818A15AAC87A17C6C250B20 /* libPods-HearthstoneCards.a */; };
+		A57347891C3EC9E9000E0267 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A57347881C3EC9E9000E0267 /* main.m */; };
+		A573478C1C3EC9E9000E0267 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A573478B1C3EC9E9000E0267 /* AppDelegate.m */; };
+		A57347921C3EC9E9000E0267 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57347901C3EC9E9000E0267 /* Home.storyboard */; };
+		A57347951C3EC9E9000E0267 /* HearthstoneCards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A57347931C3EC9E9000E0267 /* HearthstoneCards.xcdatamodeld */; };
+		A57347971C3EC9E9000E0267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57347961C3EC9E9000E0267 /* Assets.xcassets */; };
+		A573479A1C3EC9E9000E0267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57347981C3EC9E9000E0267 /* LaunchScreen.storyboard */; };
+		A57347A51C3EC9EA000E0267 /* HearthstoneCardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A57347A41C3EC9EA000E0267 /* HearthstoneCardsTests.m */; };
+		A57347B01C3EC9EA000E0267 /* HearthstoneCardsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A57347AF1C3EC9EA000E0267 /* HearthstoneCardsUITests.m */; };
+		A57347C31C3ECC15000E0267 /* DMBHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57347C21C3ECC15000E0267 /* DMBHomePageViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A57347A11C3EC9EA000E0267 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A573477C1C3EC9E9000E0267 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A57347831C3EC9E9000E0267;
+			remoteInfo = HearthstoneCards;
+		};
+		A57347AC1C3EC9EA000E0267 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A573477C1C3EC9E9000E0267 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A57347831C3EC9E9000E0267;
+			remoteInfo = HearthstoneCards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5429AFB64D9B75DFFF34A585 /* Pods-HearthstoneCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HearthstoneCards.release.xcconfig"; path = "Pods/Target Support Files/Pods-HearthstoneCards/Pods-HearthstoneCards.release.xcconfig"; sourceTree = "<group>"; };
+		7818A15AAC87A17C6C250B20 /* libPods-HearthstoneCards.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HearthstoneCards.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57347841C3EC9E9000E0267 /* HearthstoneCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HearthstoneCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57347881C3EC9E9000E0267 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A573478A1C3EC9E9000E0267 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A573478B1C3EC9E9000E0267 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A57347911C3EC9E9000E0267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		A57347941C3EC9E9000E0267 /* HearthstoneCards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HearthstoneCards.xcdatamodel; sourceTree = "<group>"; };
+		A57347961C3EC9E9000E0267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A57347991C3EC9E9000E0267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A573479B1C3EC9E9000E0267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A57347A01C3EC9EA000E0267 /* HearthstoneCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HearthstoneCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57347A41C3EC9EA000E0267 /* HearthstoneCardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HearthstoneCardsTests.m; sourceTree = "<group>"; };
+		A57347A61C3EC9EA000E0267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A57347AB1C3EC9EA000E0267 /* HearthstoneCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HearthstoneCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57347AF1C3EC9EA000E0267 /* HearthstoneCardsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HearthstoneCardsUITests.m; sourceTree = "<group>"; };
+		A57347B11C3EC9EA000E0267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A57347C11C3ECC15000E0267 /* DMBHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMBHomePageViewController.h; sourceTree = "<group>"; };
+		A57347C21C3ECC15000E0267 /* DMBHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMBHomePageViewController.m; sourceTree = "<group>"; };
+		EAD482F3216E2A2E5475D032 /* Pods-HearthstoneCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HearthstoneCards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HearthstoneCards/Pods-HearthstoneCards.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A57347811C3EC9E9000E0267 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A84A475AA51A5F0395165A7 /* libPods-HearthstoneCards.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A573479D1C3EC9EA000E0267 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A57347A81C3EC9EA000E0267 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A573477B1C3EC9E9000E0267 = {
+			isa = PBXGroup;
+			children = (
+				A57347861C3EC9E9000E0267 /* HearthstoneCards */,
+				A57347A31C3EC9EA000E0267 /* HearthstoneCardsTests */,
+				A57347AE1C3EC9EA000E0267 /* HearthstoneCardsUITests */,
+				A57347851C3EC9E9000E0267 /* Products */,
+				BB6513FC5EFBD3E8E92A8E90 /* Pods */,
+				E91DF3A56AE0624A3CFE5C10 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A57347851C3EC9E9000E0267 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A57347841C3EC9E9000E0267 /* HearthstoneCards.app */,
+				A57347A01C3EC9EA000E0267 /* HearthstoneCardsTests.xctest */,
+				A57347AB1C3EC9EA000E0267 /* HearthstoneCardsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A57347861C3EC9E9000E0267 /* HearthstoneCards */ = {
+			isa = PBXGroup;
+			children = (
+				A57347BD1C3EC9F0000E0267 /* Classes */,
+				A573478A1C3EC9E9000E0267 /* AppDelegate.h */,
+				A573478B1C3EC9E9000E0267 /* AppDelegate.m */,
+				A57347961C3EC9E9000E0267 /* Assets.xcassets */,
+				A573479B1C3EC9E9000E0267 /* Info.plist */,
+				A57347931C3EC9E9000E0267 /* HearthstoneCards.xcdatamodeld */,
+				A57347871C3EC9E9000E0267 /* Supporting Files */,
+			);
+			path = HearthstoneCards;
+			sourceTree = "<group>";
+		};
+		A57347871C3EC9E9000E0267 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A57347881C3EC9E9000E0267 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A57347A31C3EC9EA000E0267 /* HearthstoneCardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A57347A41C3EC9EA000E0267 /* HearthstoneCardsTests.m */,
+				A57347A61C3EC9EA000E0267 /* Info.plist */,
+			);
+			path = HearthstoneCardsTests;
+			sourceTree = "<group>";
+		};
+		A57347AE1C3EC9EA000E0267 /* HearthstoneCardsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A57347AF1C3EC9EA000E0267 /* HearthstoneCardsUITests.m */,
+				A57347B11C3EC9EA000E0267 /* Info.plist */,
+			);
+			path = HearthstoneCardsUITests;
+			sourceTree = "<group>";
+		};
+		A57347BD1C3EC9F0000E0267 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A57347C01C3ECA05000E0267 /* Controller */,
+				A57347BF1C3EC9FE000E0267 /* Model */,
+				A57347BE1C3EC9F7000E0267 /* View */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		A57347BE1C3EC9F7000E0267 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A57347981C3EC9E9000E0267 /* LaunchScreen.storyboard */,
+				A57347901C3EC9E9000E0267 /* Home.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A57347BF1C3EC9FE000E0267 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A57347C01C3ECA05000E0267 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A57347C11C3ECC15000E0267 /* DMBHomePageViewController.h */,
+				A57347C21C3ECC15000E0267 /* DMBHomePageViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BB6513FC5EFBD3E8E92A8E90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAD482F3216E2A2E5475D032 /* Pods-HearthstoneCards.debug.xcconfig */,
+				5429AFB64D9B75DFFF34A585 /* Pods-HearthstoneCards.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E91DF3A56AE0624A3CFE5C10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7818A15AAC87A17C6C250B20 /* libPods-HearthstoneCards.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A57347831C3EC9E9000E0267 /* HearthstoneCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A57347B41C3EC9EA000E0267 /* Build configuration list for PBXNativeTarget "HearthstoneCards" */;
+			buildPhases = (
+				9C87CE872A5151E38490A25F /* Check Pods Manifest.lock */,
+				A57347801C3EC9E9000E0267 /* Sources */,
+				A57347811C3EC9E9000E0267 /* Frameworks */,
+				A57347821C3EC9E9000E0267 /* Resources */,
+				DF7CD87A2EF1F3536096DB0F /* Embed Pods Frameworks */,
+				B8584B9C8DA8C6ABC2D3956A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HearthstoneCards;
+			productName = HearthstoneCards;
+			productReference = A57347841C3EC9E9000E0267 /* HearthstoneCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A573479F1C3EC9EA000E0267 /* HearthstoneCardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A57347B71C3EC9EA000E0267 /* Build configuration list for PBXNativeTarget "HearthstoneCardsTests" */;
+			buildPhases = (
+				A573479C1C3EC9EA000E0267 /* Sources */,
+				A573479D1C3EC9EA000E0267 /* Frameworks */,
+				A573479E1C3EC9EA000E0267 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A57347A21C3EC9EA000E0267 /* PBXTargetDependency */,
+			);
+			name = HearthstoneCardsTests;
+			productName = HearthstoneCardsTests;
+			productReference = A57347A01C3EC9EA000E0267 /* HearthstoneCardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A57347AA1C3EC9EA000E0267 /* HearthstoneCardsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A57347BA1C3EC9EA000E0267 /* Build configuration list for PBXNativeTarget "HearthstoneCardsUITests" */;
+			buildPhases = (
+				A57347A71C3EC9EA000E0267 /* Sources */,
+				A57347A81C3EC9EA000E0267 /* Frameworks */,
+				A57347A91C3EC9EA000E0267 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A57347AD1C3EC9EA000E0267 /* PBXTargetDependency */,
+			);
+			name = HearthstoneCardsUITests;
+			productName = HearthstoneCardsUITests;
+			productReference = A57347AB1C3EC9EA000E0267 /* HearthstoneCardsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A573477C1C3EC9E9000E0267 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Douglas Mendes";
+				TargetAttributes = {
+					A57347831C3EC9E9000E0267 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WQVLGGBH98;
+					};
+					A573479F1C3EC9EA000E0267 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WQVLGGBH98;
+						TestTargetID = A57347831C3EC9E9000E0267;
+					};
+					A57347AA1C3EC9EA000E0267 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WQVLGGBH98;
+						TestTargetID = A57347831C3EC9E9000E0267;
+					};
+				};
+			};
+			buildConfigurationList = A573477F1C3EC9E9000E0267 /* Build configuration list for PBXProject "HearthstoneCards" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A573477B1C3EC9E9000E0267;
+			productRefGroup = A57347851C3EC9E9000E0267 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A57347831C3EC9E9000E0267 /* HearthstoneCards */,
+				A573479F1C3EC9EA000E0267 /* HearthstoneCardsTests */,
+				A57347AA1C3EC9EA000E0267 /* HearthstoneCardsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A57347821C3EC9E9000E0267 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A573479A1C3EC9E9000E0267 /* LaunchScreen.storyboard in Resources */,
+				A57347971C3EC9E9000E0267 /* Assets.xcassets in Resources */,
+				A57347921C3EC9E9000E0267 /* Home.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A573479E1C3EC9EA000E0267 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A57347A91C3EC9EA000E0267 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C87CE872A5151E38490A25F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B8584B9C8DA8C6ABC2D3956A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HearthstoneCards/Pods-HearthstoneCards-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF7CD87A2EF1F3536096DB0F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HearthstoneCards/Pods-HearthstoneCards-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A57347801C3EC9E9000E0267 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A573478C1C3EC9E9000E0267 /* AppDelegate.m in Sources */,
+				A57347891C3EC9E9000E0267 /* main.m in Sources */,
+				A57347C31C3ECC15000E0267 /* DMBHomePageViewController.m in Sources */,
+				A57347951C3EC9E9000E0267 /* HearthstoneCards.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A573479C1C3EC9EA000E0267 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57347A51C3EC9EA000E0267 /* HearthstoneCardsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A57347A71C3EC9EA000E0267 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57347B01C3EC9EA000E0267 /* HearthstoneCardsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A57347A21C3EC9EA000E0267 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A57347831C3EC9E9000E0267 /* HearthstoneCards */;
+			targetProxy = A57347A11C3EC9EA000E0267 /* PBXContainerItemProxy */;
+		};
+		A57347AD1C3EC9EA000E0267 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A57347831C3EC9E9000E0267 /* HearthstoneCards */;
+			targetProxy = A57347AC1C3EC9EA000E0267 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A57347901C3EC9E9000E0267 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A57347911C3EC9E9000E0267 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		A57347981C3EC9E9000E0267 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A57347991C3EC9E9000E0267 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A57347B21C3EC9EA000E0267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A57347B31C3EC9EA000E0267 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A57347B51C3EC9EA000E0267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAD482F3216E2A2E5475D032 /* Pods-HearthstoneCards.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HearthstoneCards/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglasmendes.HearthstoneCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A57347B61C3EC9EA000E0267 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5429AFB64D9B75DFFF34A585 /* Pods-HearthstoneCards.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HearthstoneCards/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglasmendes.HearthstoneCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A57347B81C3EC9EA000E0267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HearthstoneCardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglasmendes.HearthstoneCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HearthstoneCards.app/HearthstoneCards";
+			};
+			name = Debug;
+		};
+		A57347B91C3EC9EA000E0267 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HearthstoneCardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglasmendes.HearthstoneCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HearthstoneCards.app/HearthstoneCards";
+			};
+			name = Release;
+		};
+		A57347BB1C3EC9EA000E0267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HearthstoneCardsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglasmendes.HearthstoneCardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HearthstoneCards;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A57347BC1C3EC9EA000E0267 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HearthstoneCardsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglasmendes.HearthstoneCardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HearthstoneCards;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A573477F1C3EC9E9000E0267 /* Build configuration list for PBXProject "HearthstoneCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A57347B21C3EC9EA000E0267 /* Debug */,
+				A57347B31C3EC9EA000E0267 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A57347B41C3EC9EA000E0267 /* Build configuration list for PBXNativeTarget "HearthstoneCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A57347B51C3EC9EA000E0267 /* Debug */,
+				A57347B61C3EC9EA000E0267 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A57347B71C3EC9EA000E0267 /* Build configuration list for PBXNativeTarget "HearthstoneCardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A57347B81C3EC9EA000E0267 /* Debug */,
+				A57347B91C3EC9EA000E0267 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A57347BA1C3EC9EA000E0267 /* Build configuration list for PBXNativeTarget "HearthstoneCardsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A57347BB1C3EC9EA000E0267 /* Debug */,
+				A57347BC1C3EC9EA000E0267 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A57347931C3EC9E9000E0267 /* HearthstoneCards.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A57347941C3EC9E9000E0267 /* HearthstoneCards.xcdatamodel */,
+			);
+			currentVersion = A57347941C3EC9E9000E0267 /* HearthstoneCards.xcdatamodel */;
+			path = HearthstoneCards.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A573477C1C3EC9E9000E0267 /* Project object */;
+}
