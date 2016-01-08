@@ -7,12 +7,9 @@
 //
 
 #import "HSSessionManager.h"
-
-static NSString *const kBaseURL = @"https://omgvamp-hearthstone-v1.p.mashape.com";
-
+#import "HSConstants.h"
 
 @implementation HSSessionManager
-
 
 -(instancetype) init
 {
@@ -25,16 +22,16 @@ static NSString *const kBaseURL = @"https://omgvamp-hearthstone-v1.p.mashape.com
     self.securityPolicy.validatesDomainName = NO;
     self.securityPolicy.allowInvalidCertificates = YES;
     
-    [self.requestSerializer setValue:@"W0KEPiq4B6mshId80a8F4crqcRRap1kiA0CjsnXfwF0x6vXdSy" forHTTPHeaderField:@"X-Mashape-Key"];
     
+    [self.requestSerializer setValue:kApiKey forHTTPHeaderField:kApiHeader];
     
-    [self GET:@"/cards" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
-        NSLog(@"%f", downloadProgress.fractionCompleted);
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"%@", responseObject);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"FAIL %@", error.localizedDescription);
-    }];
+    //    [self GET:kEndPointCards parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+    //        NSLog(@"%f", downloadProgress.fractionCompleted);
+    //    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    //        NSLog(@"%@", responseObject);
+    //    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    //        NSLog(@"FAIL %@", error.localizedDescription);
+    //    }];
     
     return self;
 }

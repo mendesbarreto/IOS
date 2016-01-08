@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HSSessionManager.h"
-
+#import "HSSessionManager+Cards.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +19,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [HSSessionManager sharedManager];
+    HSSessionManager *session = [HSSessionManager sharedManager];
+    
+    [session getAllCardsWithRequestModel:nil onSucess:^(HSCardsResponse *response) {
+        NSLog(@" %@ ", response);
+    } onFailure:^(NSError * _Nonnull error) {
+        NSLog(@"%@", error);
+    }];
     
     // Override point for customization after application launch.
     return YES;

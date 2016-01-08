@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface DMBHomePageViewController : UIViewController
 
 @property (nonatomic, weak) IBOutlet UILabel * userName;
