@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A06CCE8BECD38DD17CB6FC0D /* libPods-DribbbleViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A60E27E59976D50EA88870D /* libPods-DribbbleViewer.a */; };
+		A54636F01C43BAB80077A0E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A54636EF1C43BAB80077A0E2 /* main.m */; };
+		A54636F31C43BAB80077A0E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A54636F21C43BAB80077A0E2 /* AppDelegate.m */; };
+		A54636F61C43BAB80077A0E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54636F51C43BAB80077A0E2 /* ViewController.m */; };
+		A54636F91C43BAB80077A0E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54636F71C43BAB80077A0E2 /* Main.storyboard */; };
+		A54636FC1C43BAB80077A0E2 /* DribbbleViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A54636FA1C43BAB80077A0E2 /* DribbbleViewer.xcdatamodeld */; };
+		A54636FE1C43BAB80077A0E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54636FD1C43BAB80077A0E2 /* Assets.xcassets */; };
+		A54637011C43BAB80077A0E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54636FF1C43BAB80077A0E2 /* LaunchScreen.storyboard */; };
+		A546370C1C43BAB80077A0E2 /* DribbbleViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A546370B1C43BAB80077A0E2 /* DribbbleViewerTests.m */; };
+		A54637171C43BAB80077A0E2 /* DribbbleViewerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A54637161C43BAB80077A0E2 /* DribbbleViewerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A54637081C43BAB80077A0E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A54636E31C43BAB80077A0E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A54636EA1C43BAB80077A0E2;
+			remoteInfo = DribbbleViewer;
+		};
+		A54637131C43BAB80077A0E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A54636E31C43BAB80077A0E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A54636EA1C43BAB80077A0E2;
+			remoteInfo = DribbbleViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A60E27E59976D50EA88870D /* libPods-DribbbleViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DribbbleViewer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46657458E75264286884B38E /* Pods-DribbbleViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DribbbleViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DribbbleViewer/Pods-DribbbleViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		77D981C568D98A2630AD6C32 /* Pods-DribbbleViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DribbbleViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-DribbbleViewer/Pods-DribbbleViewer.release.xcconfig"; sourceTree = "<group>"; };
+		A54636EB1C43BAB80077A0E2 /* DribbbleViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DribbbleViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54636EF1C43BAB80077A0E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A54636F11C43BAB80077A0E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A54636F21C43BAB80077A0E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A54636F41C43BAB80077A0E2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A54636F51C43BAB80077A0E2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A54636F81C43BAB80077A0E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A54636FB1C43BAB80077A0E2 /* DribbbleViewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DribbbleViewer.xcdatamodel; sourceTree = "<group>"; };
+		A54636FD1C43BAB80077A0E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A54637001C43BAB80077A0E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A54637021C43BAB80077A0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A54637071C43BAB80077A0E2 /* DribbbleViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DribbbleViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A546370B1C43BAB80077A0E2 /* DribbbleViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DribbbleViewerTests.m; sourceTree = "<group>"; };
+		A546370D1C43BAB80077A0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A54637121C43BAB80077A0E2 /* DribbbleViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DribbbleViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54637161C43BAB80077A0E2 /* DribbbleViewerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DribbbleViewerUITests.m; sourceTree = "<group>"; };
+		A54637181C43BAB80077A0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A54636E81C43BAB80077A0E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06CCE8BECD38DD17CB6FC0D /* libPods-DribbbleViewer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54637041C43BAB80077A0E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A546370F1C43BAB80077A0E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53F1DC614A896B8A34AA54FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46657458E75264286884B38E /* Pods-DribbbleViewer.debug.xcconfig */,
+				77D981C568D98A2630AD6C32 /* Pods-DribbbleViewer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A54636E21C43BAB80077A0E2 = {
+			isa = PBXGroup;
+			children = (
+				A54636ED1C43BAB80077A0E2 /* DribbbleViewer */,
+				A546370A1C43BAB80077A0E2 /* DribbbleViewerTests */,
+				A54637151C43BAB80077A0E2 /* DribbbleViewerUITests */,
+				A54636EC1C43BAB80077A0E2 /* Products */,
+				53F1DC614A896B8A34AA54FC /* Pods */,
+				B5EC08AB474A3E6292B4A118 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A54636EC1C43BAB80077A0E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A54636EB1C43BAB80077A0E2 /* DribbbleViewer.app */,
+				A54637071C43BAB80077A0E2 /* DribbbleViewerTests.xctest */,
+				A54637121C43BAB80077A0E2 /* DribbbleViewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A54636ED1C43BAB80077A0E2 /* DribbbleViewer */ = {
+			isa = PBXGroup;
+			children = (
+				A54636F11C43BAB80077A0E2 /* AppDelegate.h */,
+				A54636F21C43BAB80077A0E2 /* AppDelegate.m */,
+				A54636F41C43BAB80077A0E2 /* ViewController.h */,
+				A54636F51C43BAB80077A0E2 /* ViewController.m */,
+				A54636F71C43BAB80077A0E2 /* Main.storyboard */,
+				A54636FD1C43BAB80077A0E2 /* Assets.xcassets */,
+				A54636FF1C43BAB80077A0E2 /* LaunchScreen.storyboard */,
+				A54637021C43BAB80077A0E2 /* Info.plist */,
+				A54636FA1C43BAB80077A0E2 /* DribbbleViewer.xcdatamodeld */,
+				A54636EE1C43BAB80077A0E2 /* Supporting Files */,
+			);
+			path = DribbbleViewer;
+			sourceTree = "<group>";
+		};
+		A54636EE1C43BAB80077A0E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A54636EF1C43BAB80077A0E2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A546370A1C43BAB80077A0E2 /* DribbbleViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A546370B1C43BAB80077A0E2 /* DribbbleViewerTests.m */,
+				A546370D1C43BAB80077A0E2 /* Info.plist */,
+			);
+			path = DribbbleViewerTests;
+			sourceTree = "<group>";
+		};
+		A54637151C43BAB80077A0E2 /* DribbbleViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A54637161C43BAB80077A0E2 /* DribbbleViewerUITests.m */,
+				A54637181C43BAB80077A0E2 /* Info.plist */,
+			);
+			path = DribbbleViewerUITests;
+			sourceTree = "<group>";
+		};
+		B5EC08AB474A3E6292B4A118 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A60E27E59976D50EA88870D /* libPods-DribbbleViewer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A54636EA1C43BAB80077A0E2 /* DribbbleViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A546371B1C43BAB80077A0E2 /* Build configuration list for PBXNativeTarget "DribbbleViewer" */;
+			buildPhases = (
+				E14E439432D6A54F23074263 /* Check Pods Manifest.lock */,
+				A54636E71C43BAB80077A0E2 /* Sources */,
+				A54636E81C43BAB80077A0E2 /* Frameworks */,
+				A54636E91C43BAB80077A0E2 /* Resources */,
+				A9E3D79E187961B3A1CFE936 /* Embed Pods Frameworks */,
+				4DCA938C74D2897E71E27264 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DribbbleViewer;
+			productName = DribbbleViewer;
+			productReference = A54636EB1C43BAB80077A0E2 /* DribbbleViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A54637061C43BAB80077A0E2 /* DribbbleViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A546371E1C43BAB80077A0E2 /* Build configuration list for PBXNativeTarget "DribbbleViewerTests" */;
+			buildPhases = (
+				A54637031C43BAB80077A0E2 /* Sources */,
+				A54637041C43BAB80077A0E2 /* Frameworks */,
+				A54637051C43BAB80077A0E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A54637091C43BAB80077A0E2 /* PBXTargetDependency */,
+			);
+			name = DribbbleViewerTests;
+			productName = DribbbleViewerTests;
+			productReference = A54637071C43BAB80077A0E2 /* DribbbleViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A54637111C43BAB80077A0E2 /* DribbbleViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A54637211C43BAB80077A0E2 /* Build configuration list for PBXNativeTarget "DribbbleViewerUITests" */;
+			buildPhases = (
+				A546370E1C43BAB80077A0E2 /* Sources */,
+				A546370F1C43BAB80077A0E2 /* Frameworks */,
+				A54637101C43BAB80077A0E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A54637141C43BAB80077A0E2 /* PBXTargetDependency */,
+			);
+			name = DribbbleViewerUITests;
+			productName = DribbbleViewerUITests;
+			productReference = A54637121C43BAB80077A0E2 /* DribbbleViewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A54636E31C43BAB80077A0E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Douglas Mendes";
+				TargetAttributes = {
+					A54636EA1C43BAB80077A0E2 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WQVLGGBH98;
+					};
+					A54637061C43BAB80077A0E2 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WQVLGGBH98;
+						TestTargetID = A54636EA1C43BAB80077A0E2;
+					};
+					A54637111C43BAB80077A0E2 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WQVLGGBH98;
+						TestTargetID = A54636EA1C43BAB80077A0E2;
+					};
+				};
+			};
+			buildConfigurationList = A54636E61C43BAB80077A0E2 /* Build configuration list for PBXProject "DribbbleViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A54636E21C43BAB80077A0E2;
+			productRefGroup = A54636EC1C43BAB80077A0E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A54636EA1C43BAB80077A0E2 /* DribbbleViewer */,
+				A54637061C43BAB80077A0E2 /* DribbbleViewerTests */,
+				A54637111C43BAB80077A0E2 /* DribbbleViewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A54636E91C43BAB80077A0E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54637011C43BAB80077A0E2 /* LaunchScreen.storyboard in Resources */,
+				A54636FE1C43BAB80077A0E2 /* Assets.xcassets in Resources */,
+				A54636F91C43BAB80077A0E2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54637051C43BAB80077A0E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54637101C43BAB80077A0E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DCA938C74D2897E71E27264 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DribbbleViewer/Pods-DribbbleViewer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9E3D79E187961B3A1CFE936 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DribbbleViewer/Pods-DribbbleViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E14E439432D6A54F23074263 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A54636E71C43BAB80077A0E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54636F61C43BAB80077A0E2 /* ViewController.m in Sources */,
+				A54636F31C43BAB80077A0E2 /* AppDelegate.m in Sources */,
+				A54636F01C43BAB80077A0E2 /* main.m in Sources */,
+				A54636FC1C43BAB80077A0E2 /* DribbbleViewer.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54637031C43BAB80077A0E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A546370C1C43BAB80077A0E2 /* DribbbleViewerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A546370E1C43BAB80077A0E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54637171C43BAB80077A0E2 /* DribbbleViewerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A54637091C43BAB80077A0E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A54636EA1C43BAB80077A0E2 /* DribbbleViewer */;
+			targetProxy = A54637081C43BAB80077A0E2 /* PBXContainerItemProxy */;
+		};
+		A54637141C43BAB80077A0E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A54636EA1C43BAB80077A0E2 /* DribbbleViewer */;
+			targetProxy = A54637131C43BAB80077A0E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A54636F71C43BAB80077A0E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A54636F81C43BAB80077A0E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A54636FF1C43BAB80077A0E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A54637001C43BAB80077A0E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A54637191C43BAB80077A0E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A546371A1C43BAB80077A0E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A546371C1C43BAB80077A0E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46657458E75264286884B38E /* Pods-DribbbleViewer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DribbbleViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglasmendes.DribbbleViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A546371D1C43BAB80077A0E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D981C568D98A2630AD6C32 /* Pods-DribbbleViewer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DribbbleViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglasmendes.DribbbleViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A546371F1C43BAB80077A0E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DribbbleViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglasmendes.DribbbleViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DribbbleViewer.app/DribbbleViewer";
+			};
+			name = Debug;
+		};
+		A54637201C43BAB80077A0E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DribbbleViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglasmendes.DribbbleViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DribbbleViewer.app/DribbbleViewer";
+			};
+			name = Release;
+		};
+		A54637221C43BAB80077A0E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DribbbleViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglasmendes.DribbbleViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DribbbleViewer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A54637231C43BAB80077A0E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DribbbleViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglasmendes.DribbbleViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DribbbleViewer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A54636E61C43BAB80077A0E2 /* Build configuration list for PBXProject "DribbbleViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54637191C43BAB80077A0E2 /* Debug */,
+				A546371A1C43BAB80077A0E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A546371B1C43BAB80077A0E2 /* Build configuration list for PBXNativeTarget "DribbbleViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A546371C1C43BAB80077A0E2 /* Debug */,
+				A546371D1C43BAB80077A0E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A546371E1C43BAB80077A0E2 /* Build configuration list for PBXNativeTarget "DribbbleViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A546371F1C43BAB80077A0E2 /* Debug */,
+				A54637201C43BAB80077A0E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A54637211C43BAB80077A0E2 /* Build configuration list for PBXNativeTarget "DribbbleViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54637221C43BAB80077A0E2 /* Debug */,
+				A54637231C43BAB80077A0E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A54636FA1C43BAB80077A0E2 /* DribbbleViewer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A54636FB1C43BAB80077A0E2 /* DribbbleViewer.xcdatamodel */,
+			);
+			currentVersion = A54636FB1C43BAB80077A0E2 /* DribbbleViewer.xcdatamodel */;
+			path = DribbbleViewer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A54636E31C43BAB80077A0E2 /* Project object */;
+}
