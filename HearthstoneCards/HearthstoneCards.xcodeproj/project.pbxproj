@@ -23,6 +23,7 @@
 		A57347D01C404252000E0267 /* HSCard.m in Sources */ = {isa = PBXBuildFile; fileRef = A57347CF1C404252000E0267 /* HSCard.m */; };
 		A57347D31C404F83000E0267 /* HSCardsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A57347D21C404F83000E0267 /* HSCardsResponse.m */; };
 		A57347DA1C4059AF000E0267 /* HSSessionManager+Cards.m in Sources */ = {isa = PBXBuildFile; fileRef = A57347D91C4059AF000E0267 /* HSSessionManager+Cards.m */; };
+		A5B4443E1C45AC3600AB2CF8 /* HSCardBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B4443D1C45AC3600AB2CF8 /* HSCardBoardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		A57347D21C404F83000E0267 /* HSCardsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSCardsResponse.m; path = HearthstoneCards/Classes/HSCardsResponse.m; sourceTree = SOURCE_ROOT; };
 		A57347D81C4059AF000E0267 /* HSSessionManager+Cards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HSSessionManager+Cards.h"; sourceTree = "<group>"; };
 		A57347D91C4059AF000E0267 /* HSSessionManager+Cards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HSSessionManager+Cards.m"; sourceTree = "<group>"; };
+		A5B4443C1C45AC3600AB2CF8 /* HSCardBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCardBoardViewController.h; sourceTree = "<group>"; };
+		A5B4443D1C45AC3600AB2CF8 /* HSCardBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCardBoardViewController.m; sourceTree = "<group>"; };
 		EAD482F3216E2A2E5475D032 /* Pods-HearthstoneCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HearthstoneCards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HearthstoneCards/Pods-HearthstoneCards.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,6 +206,8 @@
 			children = (
 				A57347C11C3ECC15000E0267 /* DMBHomePageViewController.h */,
 				A57347C21C3ECC15000E0267 /* DMBHomePageViewController.m */,
+				A5B4443C1C45AC3600AB2CF8 /* HSCardBoardViewController.h */,
+				A5B4443D1C45AC3600AB2CF8 /* HSCardBoardViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -436,6 +441,7 @@
 				A57347CA1C402746000E0267 /* HSConstants.m in Sources */,
 				A57347C31C3ECC15000E0267 /* DMBHomePageViewController.m in Sources */,
 				A57347CD1C403AEC000E0267 /* HSCardsRequest.m in Sources */,
+				A5B4443E1C45AC3600AB2CF8 /* HSCardBoardViewController.m in Sources */,
 				A57347C61C3EF7D9000E0267 /* HSSessionManager.m in Sources */,
 				A57347951C3EC9E9000E0267 /* HearthstoneCards.xcdatamodeld in Sources */,
 				A57347D31C404F83000E0267 /* HSCardsResponse.m in Sources */,

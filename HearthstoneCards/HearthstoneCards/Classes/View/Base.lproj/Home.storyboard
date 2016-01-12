@@ -33,6 +33,15 @@
                     <view key="view" contentMode="scaleToFill" id="clx-GA-snt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbf-Cg-7v2">
+                                <rect key="frame" x="129" y="284" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="whr-k9-qqF" kind="show" id="DQb-fB-Lvh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="qrz-iF-5tD"/>
@@ -42,5 +51,39 @@
             </objects>
             <point key="canvasLocation" x="-754" y="481"/>
         </scene>
+        <!--Card Board View Controller-->
+        <scene sceneID="CgH-OW-hps">
+            <objects>
+                <viewController id="whr-k9-qqF" customClass="HSCardBoardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IxQ-4Q-YII"/>
+                        <viewControllerLayoutGuide type="bottom" id="LWn-HM-aLl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WfD-NO-4hc">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BoardCard2" translatesAutoresizingMaskIntoConstraints="NO" id="LJY-xD-ufI">
+                                <rect key="frame" x="0.0" y="64" width="736" height="480"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LJY-xD-ufI" secondAttribute="trailing" id="Jom-3M-mnm"/>
+                            <constraint firstItem="LJY-xD-ufI" firstAttribute="leading" secondItem="WfD-NO-4hc" secondAttribute="leading" id="eFj-zI-55J"/>
+                            <constraint firstAttribute="bottom" secondItem="LJY-xD-ufI" secondAttribute="bottom" constant="-130" id="eLa-4V-wpx"/>
+                            <constraint firstItem="LJY-xD-ufI" firstAttribute="top" secondItem="IxQ-4Q-YII" secondAttribute="bottom" id="yFL-DF-erw"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOs-av-KVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-754" y="1237"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="BoardCard2" width="3840" height="2400"/>
+    </resources>
 </document>

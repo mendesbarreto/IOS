@@ -17,6 +17,8 @@
 		A54637011C43BAB80077A0E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54636FF1C43BAB80077A0E2 /* LaunchScreen.storyboard */; };
 		A546370C1C43BAB80077A0E2 /* DribbbleViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A546370B1C43BAB80077A0E2 /* DribbbleViewerTests.m */; };
 		A54637171C43BAB80077A0E2 /* DribbbleViewerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A54637161C43BAB80077A0E2 /* DribbbleViewerUITests.m */; };
+		A54637281C43C84E0077A0E2 /* DVConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A54637271C43C84E0077A0E2 /* DVConstants.m */; };
+		A546372B1C43E5A90077A0E2 /* FDCUserResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A546372A1C43E5A90077A0E2 /* FDCUserResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		A54637121C43BAB80077A0E2 /* DribbbleViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DribbbleViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54637161C43BAB80077A0E2 /* DribbbleViewerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DribbbleViewerUITests.m; sourceTree = "<group>"; };
 		A54637181C43BAB80077A0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A54637261C43C84E0077A0E2 /* DVConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVConstants.h; sourceTree = "<group>"; };
+		A54637271C43C84E0077A0E2 /* DVConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVConstants.m; sourceTree = "<group>"; };
+		A54637291C43E5A90077A0E2 /* FDCUserResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCUserResponse.h; sourceTree = "<group>"; };
+		A546372A1C43E5A90077A0E2 /* FDCUserResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCUserResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 		A54636ED1C43BAB80077A0E2 /* DribbbleViewer */ = {
 			isa = PBXGroup;
 			children = (
+				A54637241C43C7F10077A0E2 /* Classes */,
 				A54636F11C43BAB80077A0E2 /* AppDelegate.h */,
 				A54636F21C43BAB80077A0E2 /* AppDelegate.m */,
 				A54636F41C43BAB80077A0E2 /* ViewController.h */,
@@ -157,6 +164,33 @@
 				A54637181C43BAB80077A0E2 /* Info.plist */,
 			);
 			path = DribbbleViewerUITests;
+			sourceTree = "<group>";
+		};
+		A54637241C43C7F10077A0E2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A546372C1C43E7580077A0E2 /* Models */,
+				A54637251C43C7FA0077A0E2 /* Helpers */,
+				A54637291C43E5A90077A0E2 /* FDCUserResponse.h */,
+				A546372A1C43E5A90077A0E2 /* FDCUserResponse.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		A54637251C43C7FA0077A0E2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A54637261C43C84E0077A0E2 /* DVConstants.h */,
+				A54637271C43C84E0077A0E2 /* DVConstants.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		A546372C1C43E7580077A0E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		B5EC08AB474A3E6292B4A118 /* Frameworks */ = {
@@ -351,10 +385,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A54637281C43C84E0077A0E2 /* DVConstants.m in Sources */,
 				A54636F61C43BAB80077A0E2 /* ViewController.m in Sources */,
 				A54636F31C43BAB80077A0E2 /* AppDelegate.m in Sources */,
 				A54636F01C43BAB80077A0E2 /* main.m in Sources */,
 				A54636FC1C43BAB80077A0E2 /* DribbbleViewer.xcdatamodeld in Sources */,
+				A546372B1C43E5A90077A0E2 /* FDCUserResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
