@@ -7,14 +7,23 @@
 //
 
 #import "HearthStone.h"
-static int const kCardHeight = 465;
-static int const kCardWidth = 307;
+
+static float const kCardHeight = 233;
+static float const kCardWidth = 154;
+static const CGPoint kOffset = {0, 80.0f};
 
 @interface HSCardUIView : UIView
 
-@property (nonatomic, readonly) HSCard * cardInfo;
+@property (nonatomic, readonly) HSCard *cardInfo;
 @property (nonatomic) UIImageView *image;
 
+/*! @brief When you init the HSCardUIView with this funciton the cards information and image will be diplayed auto*/
 - (instancetype) initWithModel: (HSCard *) card;
+
+/*! @brief updates and reload image in the view, case  the user pass a new model all information will be reloaded*/
+- (void) udpateCard: (HSCard * _Nullable) card;
+
+- (NSLayoutConstraint *)pin:(id)item attribute:(NSLayoutAttribute)attribute parent:(UIView *) uiComponent;
+- (void)constraintTo:(UIView *) uiComponent;
 
 @end

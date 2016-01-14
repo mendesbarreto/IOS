@@ -10,6 +10,7 @@
 #define __HEARTH_STONE_H
 
 #import <UIKit/UIKit.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 #import "HSCardsRequest.h"
 #import "HSSessionManager.h"
 #import "HSConstants.h"

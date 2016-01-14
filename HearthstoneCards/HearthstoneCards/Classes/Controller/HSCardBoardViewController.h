@@ -10,6 +10,6 @@
 
 @interface HSCardBoardViewController : UIViewController
 
-@property (strong, nonatomic) UIView *card;
+@property (nonatomic) NSMutableArray *cards;
 
 @end

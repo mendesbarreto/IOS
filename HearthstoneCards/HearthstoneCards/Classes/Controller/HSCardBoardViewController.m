@@ -6,7 +6,7 @@
 //  Copyright © 2016 Douglas Mendes. All rights reserved.
 //
 
-#import "HSCardBoardViewController.h"
+#import "HearthStone.h"
 
 @interface HSCardBoardViewController ()
 
@@ -16,22 +16,64 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    self.cards = [NSMutableArray new];
+    HSCard *carInfo = [[HSCard alloc] init];
+    carInfo.imgUrl = @"http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_409.png";
+    
+    __block CGRect rect;
+    CGSize size;
+    
+    int numOfCards = [self howManyCardsCouldBeDisplayedOnTheScreen];
+    
+    HSCardUIView* card;
+    for(int i = 0; i < numOfCards; i++)
+    {
+        card = [[HSCardUIView alloc] initWithModel:carInfo];
+        size = card.frame.size;
+        rect = CGRectMake( -(kCardWidth + 100), kOffset.y, size.width, size.height);
+        card.frame = rect;
+        [self.view addSubview:card];
+        [self.cards addObject:card];
+    }
     
     
-    __block CGRect rect = CGRectMake(0, 0, 200, 200);
-    
-    self.card = [[UIView alloc] initWithFrame:rect];
-    self.card.backgroundColor = [UIColor redColor];
-    
-    [self.view addSubview:self.card];
-    
-    rect.origin.x = 100;
-    
-    [UIView animateWithDuration:2.0 animations:^{
+    float interval = 0;
+    for( int i = 0; i < numOfCards; i++)
+    {
+        card = self.cards[i];
+        rect = card.frame;
+        rect.origin.x = i * rect.size.width;
+        interval = i * 0.3;
         
-        self.card.frame = rect;
-    }];
+        
+        [UIView animateWithDuration:0.3 delay:interval options:0 animations:^{
+            card.frame = rect;
+        } completion:^(BOOL finished) {
+            
+        }];
+        //        [UIView animateWithDuration:2.0 animations:^{
+        //            card.frame = rect;
+        //        }];
+    }
     
+    
+}
+
+
+-(int) howManyCardsCouldBeDisplayedOnTheScreen
+{
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    float w = screenBounds.size.width;
+    
+    int numberOfCards;
+    
+    if( kCardWidth > w)
+        numberOfCards = 1;
+    else
+        numberOfCards = ceil(w / kCardWidth);
+    
+    return numberOfCards;
 }
 
 - (void)didReceiveMemoryWarning {

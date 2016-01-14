@@ -60,11 +60,11 @@
                         <viewControllerLayoutGuide type="bottom" id="LWn-HM-aLl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WfD-NO-4hc">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BoardCard2" translatesAutoresizingMaskIntoConstraints="NO" id="LJY-xD-ufI">
-                                <rect key="frame" x="0.0" y="64" width="736" height="480"/>
+                                <rect key="frame" x="0.0" y="64" width="568" height="386"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -76,11 +76,11 @@
                         </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OOs-av-KVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-754" y="1237"/>
+            <point key="canvasLocation" x="-692" y="1221"/>
         </scene>
     </scenes>
     <resources>
