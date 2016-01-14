@@ -7,7 +7,7 @@ target 'HearthstoneCards' do
 pod 'Mantle'
 pod 'Realm'
 pod 'AFNetworking'
-pod 'FLAnimatedImage'
+pod 'SDWebImage', '~>3.7'
 end
 
 target 'HearthstoneCardsTests' do
