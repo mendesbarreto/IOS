@@ -12,4 +12,8 @@
 
 @property (nonatomic) NSMutableArray *cards;
 
+-(float) offsetXFrom:(CGSize)screenSize
+          cardNumber:(int)cardsQtd
+           cardWidth:(float)w;
+
 @end
