@@ -163,6 +163,7 @@
 		A500B2AC1C4E3FE300CA0C19 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A569D75D1C516DC5005FFCF3 /* Helpers */,
 				A500B2AF1C4E400000CA0C19 /* Controller */,
 				A500B2AE1C4E3FFB00CA0C19 /* Model */,
 				A500B2AD1C4E3FF500CA0C19 /* View */,
@@ -199,6 +200,13 @@
 				A500B2E41C4EA41F00CA0C19 /* Setup.json */,
 			);
 			name = File;
+			sourceTree = "<group>";
+		};
+		A569D75D1C516DC5005FFCF3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

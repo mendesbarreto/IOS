@@ -11,11 +11,11 @@ import UIKit
 public class BWSetupViewController: UIViewController {
     @IBOutlet weak var textView:UITextView?
     
+    private let text:String = "between $hourStart and $hourEnd, there's less than 10% chance of raining, the temperature is higher than $temperatureStart and lower than $temperatureEnd, and humidity varies between $humidityStart and $humidityEnd";
     
     override public func viewDidLoad()
     {
         let data = NSData(contentsOfFile: "");
-        
         let parsedString = parseStringToView(" Eu sou o produto Eu sou o #link para o produto# ");
         
         let tapRecognizer = UITapGestureRecognizer(target: self, action: Selector("tappedTextView:"));
@@ -26,8 +26,8 @@ public class BWSetupViewController: UIViewController {
         
         //Creating my attributes
         let foregroundAttr = [ NSForegroundColorAttributeName: UIColor.greenColor() ];
-        let backgroundAttr = [ NSBackgroundColorAttributeName: UIColor.yellowColor() ]
-        let underLineAttr = [ NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleDouble.rawValue ]
+        let backgroundAttr = [ NSBackgroundColorAttributeName: UIColor.yellowColor() ];
+        let underLineAttr = [ NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleDouble.rawValue ];
         let linkAttr = [ NSLinkAttributeName: NSURL(string: "settings:option")!];
         
         //Mutable Atribute string

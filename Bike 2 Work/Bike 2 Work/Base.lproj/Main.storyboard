@@ -37,15 +37,19 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyD-O0-N1k" userLabel="TextContent">
                                         <rect key="frame" x="33" y="26" width="534" height="469"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IAE-mB-JSt" userLabel="TextContent">
-                                                <rect key="frame" x="0.0" y="189" width="240" height="128"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IAE-mB-JSt" userLabel="TextContent">
+                                                <rect key="frame" x="0.0" y="0.0" width="534" height="469"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="IAE-mB-JSt" secondAttribute="bottom" id="4Ck-Xd-bUL"/>
+                                            <constraint firstItem="IAE-mB-JSt" firstAttribute="top" secondItem="ZyD-O0-N1k" secondAttribute="top" id="NKv-8d-1aX"/>
+                                            <constraint firstAttribute="trailing" secondItem="IAE-mB-JSt" secondAttribute="trailing" id="hnf-vU-dna"/>
+                                            <constraint firstItem="IAE-mB-JSt" firstAttribute="leading" secondItem="ZyD-O0-N1k" secondAttribute="leading" id="nSb-N0-IOw"/>
                                             <constraint firstAttribute="height" constant="469" id="r1v-we-4AS"/>
                                         </constraints>
                                     </view>
