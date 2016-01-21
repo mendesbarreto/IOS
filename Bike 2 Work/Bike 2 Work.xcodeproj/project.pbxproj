@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		711F4AB247B90B3D891411B1 /* Pods_Bike_2_Work.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3B01AE4456880968F6500E /* Pods_Bike_2_Work.framework */; };
+		A500B27C1C4E3D8C00CA0C19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A500B27B1C4E3D8C00CA0C19 /* AppDelegate.swift */; };
+		A500B27E1C4E3D8C00CA0C19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A500B27D1C4E3D8C00CA0C19 /* ViewController.swift */; };
+		A500B2811C4E3D8C00CA0C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A500B27F1C4E3D8C00CA0C19 /* Main.storyboard */; };
+		A500B2841C4E3D8C00CA0C19 /* Bike_2_Work.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A500B2821C4E3D8C00CA0C19 /* Bike_2_Work.xcdatamodeld */; };
+		A500B2861C4E3D8C00CA0C19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A500B2851C4E3D8C00CA0C19 /* Assets.xcassets */; };
+		A500B2891C4E3D8C00CA0C19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A500B2871C4E3D8C00CA0C19 /* LaunchScreen.storyboard */; };
+		A500B2941C4E3D8C00CA0C19 /* Bike_2_WorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A500B2931C4E3D8C00CA0C19 /* Bike_2_WorkTests.swift */; };
+		A500B29F1C4E3D8C00CA0C19 /* Bike_2_WorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A500B29E1C4E3D8C00CA0C19 /* Bike_2_WorkUITests.swift */; };
+		A500B2E11C4E445000CA0C19 /* BWSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A500B2E01C4E445000CA0C19 /* BWSetupViewController.swift */; };
+		A500B2E51C4EA41F00CA0C19 /* Setup in Resources */ = {isa = PBXBuildFile; fileRef = A500B2E31C4EA41F00CA0C19 /* Setup */; };
+		A500B2E61C4EA41F00CA0C19 /* Setup.json in Resources */ = {isa = PBXBuildFile; fileRef = A500B2E41C4EA41F00CA0C19 /* Setup.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A500B2901C4E3D8C00CA0C19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A500B2701C4E3D8C00CA0C19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A500B2771C4E3D8C00CA0C19;
+			remoteInfo = "Bike 2 Work";
+		};
+		A500B29B1C4E3D8C00CA0C19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A500B2701C4E3D8C00CA0C19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A500B2771C4E3D8C00CA0C19;
+			remoteInfo = "Bike 2 Work";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A97E8C963134F20F4E6D97C /* Pods-Bike 2 Work.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bike 2 Work.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bike 2 Work/Pods-Bike 2 Work.debug.xcconfig"; sourceTree = "<group>"; };
+		9D3B01AE4456880968F6500E /* Pods_Bike_2_Work.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bike_2_Work.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A500B2781C4E3D8C00CA0C19 /* Bike 2 Work.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bike 2 Work.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A500B27B1C4E3D8C00CA0C19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A500B27D1C4E3D8C00CA0C19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A500B2801C4E3D8C00CA0C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A500B2831C4E3D8C00CA0C19 /* Bike_2_Work.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bike_2_Work.xcdatamodel; sourceTree = "<group>"; };
+		A500B2851C4E3D8C00CA0C19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A500B2881C4E3D8C00CA0C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A500B28A1C4E3D8C00CA0C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A500B28F1C4E3D8C00CA0C19 /* Bike 2 WorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bike 2 WorkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A500B2931C4E3D8C00CA0C19 /* Bike_2_WorkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bike_2_WorkTests.swift; sourceTree = "<group>"; };
+		A500B2951C4E3D8C00CA0C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A500B29A1C4E3D8C00CA0C19 /* Bike 2 WorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bike 2 WorkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A500B29E1C4E3D8C00CA0C19 /* Bike_2_WorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bike_2_WorkUITests.swift; sourceTree = "<group>"; };
+		A500B2A01C4E3D8C00CA0C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A500B2E01C4E445000CA0C19 /* BWSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWSetupViewController.swift; sourceTree = "<group>"; };
+		A500B2E31C4EA41F00CA0C19 /* Setup */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Setup; sourceTree = "<group>"; };
+		A500B2E41C4EA41F00CA0C19 /* Setup.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Setup.json; sourceTree = "<group>"; };
+		A6B082D6B555E8B716381504 /* Pods-Bike 2 Work.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bike 2 Work.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bike 2 Work/Pods-Bike 2 Work.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A500B2751C4E3D8C00CA0C19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				711F4AB247B90B3D891411B1 /* Pods_Bike_2_Work.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A500B28C1C4E3D8C00CA0C19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A500B2971C4E3D8C00CA0C19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29E5CDC39C1ACF34F8402622 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D3B01AE4456880968F6500E /* Pods_Bike_2_Work.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B1EC46325FD2CE2B0DC88A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A97E8C963134F20F4E6D97C /* Pods-Bike 2 Work.debug.xcconfig */,
+				A6B082D6B555E8B716381504 /* Pods-Bike 2 Work.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A500B26F1C4E3D8C00CA0C19 = {
+			isa = PBXGroup;
+			children = (
+				A500B27A1C4E3D8C00CA0C19 /* Bike 2 Work */,
+				A500B2921C4E3D8C00CA0C19 /* Bike 2 WorkTests */,
+				A500B29D1C4E3D8C00CA0C19 /* Bike 2 WorkUITests */,
+				A500B2791C4E3D8C00CA0C19 /* Products */,
+				3B1EC46325FD2CE2B0DC88A1 /* Pods */,
+				29E5CDC39C1ACF34F8402622 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A500B2791C4E3D8C00CA0C19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A500B2781C4E3D8C00CA0C19 /* Bike 2 Work.app */,
+				A500B28F1C4E3D8C00CA0C19 /* Bike 2 WorkTests.xctest */,
+				A500B29A1C4E3D8C00CA0C19 /* Bike 2 WorkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A500B27A1C4E3D8C00CA0C19 /* Bike 2 Work */ = {
+			isa = PBXGroup;
+			children = (
+				A500B2E21C4EA3FB00CA0C19 /* File */,
+				A500B2AC1C4E3FE300CA0C19 /* Classes */,
+				A500B27B1C4E3D8C00CA0C19 /* AppDelegate.swift */,
+				A500B27D1C4E3D8C00CA0C19 /* ViewController.swift */,
+				A500B27F1C4E3D8C00CA0C19 /* Main.storyboard */,
+				A500B2851C4E3D8C00CA0C19 /* Assets.xcassets */,
+				A500B2871C4E3D8C00CA0C19 /* LaunchScreen.storyboard */,
+				A500B28A1C4E3D8C00CA0C19 /* Info.plist */,
+				A500B2821C4E3D8C00CA0C19 /* Bike_2_Work.xcdatamodeld */,
+			);
+			path = "Bike 2 Work";
+			sourceTree = "<group>";
+		};
+		A500B2921C4E3D8C00CA0C19 /* Bike 2 WorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				A500B2931C4E3D8C00CA0C19 /* Bike_2_WorkTests.swift */,
+				A500B2951C4E3D8C00CA0C19 /* Info.plist */,
+			);
+			path = "Bike 2 WorkTests";
+			sourceTree = "<group>";
+		};
+		A500B29D1C4E3D8C00CA0C19 /* Bike 2 WorkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A500B29E1C4E3D8C00CA0C19 /* Bike_2_WorkUITests.swift */,
+				A500B2A01C4E3D8C00CA0C19 /* Info.plist */,
+			);
+			path = "Bike 2 WorkUITests";
+			sourceTree = "<group>";
+		};
+		A500B2AC1C4E3FE300CA0C19 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A500B2AF1C4E400000CA0C19 /* Controller */,
+				A500B2AE1C4E3FFB00CA0C19 /* Model */,
+				A500B2AD1C4E3FF500CA0C19 /* View */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		A500B2AD1C4E3FF500CA0C19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A500B2AE1C4E3FFB00CA0C19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A500B2AF1C4E400000CA0C19 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A500B2E01C4E445000CA0C19 /* BWSetupViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A500B2E21C4EA3FB00CA0C19 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				A500B2E31C4EA41F00CA0C19 /* Setup */,
+				A500B2E41C4EA41F00CA0C19 /* Setup.json */,
+			);
+			name = File;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A500B2771C4E3D8C00CA0C19 /* Bike 2 Work */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A500B2A31C4E3D8C00CA0C19 /* Build configuration list for PBXNativeTarget "Bike 2 Work" */;
+			buildPhases = (
+				A2DF3553631B2ED5522BD343 /* Check Pods Manifest.lock */,
+				A500B2741C4E3D8C00CA0C19 /* Sources */,
+				A500B2751C4E3D8C00CA0C19 /* Frameworks */,
+				A500B2761C4E3D8C00CA0C19 /* Resources */,
+				41B7EEB30FF23178A933DE89 /* Embed Pods Frameworks */,
+				4DE3E522E3D17A93230CD30F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bike 2 Work";
+			productName = "Bike 2 Work";
+			productReference = A500B2781C4E3D8C00CA0C19 /* Bike 2 Work.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A500B28E1C4E3D8C00CA0C19 /* Bike 2 WorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A500B2A61C4E3D8C00CA0C19 /* Build configuration list for PBXNativeTarget "Bike 2 WorkTests" */;
+			buildPhases = (
+				A500B28B1C4E3D8C00CA0C19 /* Sources */,
+				A500B28C1C4E3D8C00CA0C19 /* Frameworks */,
+				A500B28D1C4E3D8C00CA0C19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A500B2911C4E3D8C00CA0C19 /* PBXTargetDependency */,
+			);
+			name = "Bike 2 WorkTests";
+			productName = "Bike 2 WorkTests";
+			productReference = A500B28F1C4E3D8C00CA0C19 /* Bike 2 WorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A500B2991C4E3D8C00CA0C19 /* Bike 2 WorkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A500B2A91C4E3D8C00CA0C19 /* Build configuration list for PBXNativeTarget "Bike 2 WorkUITests" */;
+			buildPhases = (
+				A500B2961C4E3D8C00CA0C19 /* Sources */,
+				A500B2971C4E3D8C00CA0C19 /* Frameworks */,
+				A500B2981C4E3D8C00CA0C19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A500B29C1C4E3D8C00CA0C19 /* PBXTargetDependency */,
+			);
+			name = "Bike 2 WorkUITests";
+			productName = "Bike 2 WorkUITests";
+			productReference = A500B29A1C4E3D8C00CA0C19 /* Bike 2 WorkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A500B2701C4E3D8C00CA0C19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BW;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Douglas Mendes";
+				TargetAttributes = {
+					A500B2771C4E3D8C00CA0C19 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WQVLGGBH98;
+					};
+					A500B28E1C4E3D8C00CA0C19 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WQVLGGBH98;
+						TestTargetID = A500B2771C4E3D8C00CA0C19;
+					};
+					A500B2991C4E3D8C00CA0C19 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WQVLGGBH98;
+						TestTargetID = A500B2771C4E3D8C00CA0C19;
+					};
+				};
+			};
+			buildConfigurationList = A500B2731C4E3D8C00CA0C19 /* Build configuration list for PBXProject "Bike 2 Work" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A500B26F1C4E3D8C00CA0C19;
+			productRefGroup = A500B2791C4E3D8C00CA0C19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A500B2771C4E3D8C00CA0C19 /* Bike 2 Work */,
+				A500B28E1C4E3D8C00CA0C19 /* Bike 2 WorkTests */,
+				A500B2991C4E3D8C00CA0C19 /* Bike 2 WorkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A500B2761C4E3D8C00CA0C19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A500B2891C4E3D8C00CA0C19 /* LaunchScreen.storyboard in Resources */,
+				A500B2861C4E3D8C00CA0C19 /* Assets.xcassets in Resources */,
+				A500B2E61C4EA41F00CA0C19 /* Setup.json in Resources */,
+				A500B2E51C4EA41F00CA0C19 /* Setup in Resources */,
+				A500B2811C4E3D8C00CA0C19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A500B28D1C4E3D8C00CA0C19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A500B2981C4E3D8C00CA0C19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41B7EEB30FF23178A933DE89 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bike 2 Work/Pods-Bike 2 Work-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DE3E522E3D17A93230CD30F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bike 2 Work/Pods-Bike 2 Work-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2DF3553631B2ED5522BD343 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A500B2741C4E3D8C00CA0C19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A500B27E1C4E3D8C00CA0C19 /* ViewController.swift in Sources */,
+				A500B27C1C4E3D8C00CA0C19 /* AppDelegate.swift in Sources */,
+				A500B2841C4E3D8C00CA0C19 /* Bike_2_Work.xcdatamodeld in Sources */,
+				A500B2E11C4E445000CA0C19 /* BWSetupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A500B28B1C4E3D8C00CA0C19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A500B2941C4E3D8C00CA0C19 /* Bike_2_WorkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A500B2961C4E3D8C00CA0C19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A500B29F1C4E3D8C00CA0C19 /* Bike_2_WorkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A500B2911C4E3D8C00CA0C19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A500B2771C4E3D8C00CA0C19 /* Bike 2 Work */;
+			targetProxy = A500B2901C4E3D8C00CA0C19 /* PBXContainerItemProxy */;
+		};
+		A500B29C1C4E3D8C00CA0C19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A500B2771C4E3D8C00CA0C19 /* Bike 2 Work */;
+			targetProxy = A500B29B1C4E3D8C00CA0C19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A500B27F1C4E3D8C00CA0C19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A500B2801C4E3D8C00CA0C19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A500B2871C4E3D8C00CA0C19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A500B2881C4E3D8C00CA0C19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A500B2A11C4E3D8C00CA0C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A500B2A21C4E3D8C00CA0C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A500B2A41C4E3D8C00CA0C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A97E8C963134F20F4E6D97C /* Pods-Bike 2 Work.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Bike 2 Work/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.douglasmendes.Bike-2-Work";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A500B2A51C4E3D8C00CA0C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6B082D6B555E8B716381504 /* Pods-Bike 2 Work.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Bike 2 Work/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.douglasmendes.Bike-2-Work";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A500B2A71C4E3D8C00CA0C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Bike 2 WorkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.douglasmendes.Bike-2-WorkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bike 2 Work.app/Bike 2 Work";
+			};
+			name = Debug;
+		};
+		A500B2A81C4E3D8C00CA0C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Bike 2 WorkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.douglasmendes.Bike-2-WorkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bike 2 Work.app/Bike 2 Work";
+			};
+			name = Release;
+		};
+		A500B2AA1C4E3D8C00CA0C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Bike 2 WorkUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.douglasmendes.Bike-2-WorkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Bike 2 Work";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A500B2AB1C4E3D8C00CA0C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Bike 2 WorkUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.douglasmendes.Bike-2-WorkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Bike 2 Work";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A500B2731C4E3D8C00CA0C19 /* Build configuration list for PBXProject "Bike 2 Work" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A500B2A11C4E3D8C00CA0C19 /* Debug */,
+				A500B2A21C4E3D8C00CA0C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A500B2A31C4E3D8C00CA0C19 /* Build configuration list for PBXNativeTarget "Bike 2 Work" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A500B2A41C4E3D8C00CA0C19 /* Debug */,
+				A500B2A51C4E3D8C00CA0C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A500B2A61C4E3D8C00CA0C19 /* Build configuration list for PBXNativeTarget "Bike 2 WorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A500B2A71C4E3D8C00CA0C19 /* Debug */,
+				A500B2A81C4E3D8C00CA0C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A500B2A91C4E3D8C00CA0C19 /* Build configuration list for PBXNativeTarget "Bike 2 WorkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A500B2AA1C4E3D8C00CA0C19 /* Debug */,
+				A500B2AB1C4E3D8C00CA0C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A500B2821C4E3D8C00CA0C19 /* Bike_2_Work.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A500B2831C4E3D8C00CA0C19 /* Bike_2_Work.xcdatamodel */,
+			);
+			currentVersion = A500B2831C4E3D8C00CA0C19 /* Bike_2_Work.xcdatamodel */;
+			path = Bike_2_Work.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A500B2701C4E3D8C00CA0C19 /* Project object */;
+}

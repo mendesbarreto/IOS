@@ -1,0 +1,53 @@
+/*********************************************************************************************
+
+Here is some settings to help you a write what you want without complications
+
+$city - when the user click in this text a picker to cities will open
+
+$hour - when the user clicks in this text a picker for hours will open
+$hourStart - do the same as $hour but needs to be set togther with $hour2, to make possible calculate the time betbetweentween hours.
+$hourEnd - do the same as $hour but needs to be set togther with $hour1, to make possible calculate the time between hours.
+
+$temperature - when the user clicks in this text a picker to temperature will be open
+$temperatureStart - do the same as $temperature, but need to be set toghter with $temperature2.
+$temperatureEnd - do the same as $temperature, but need to be set toghter with $temperature1.
+
+$humidityStart
+$humidityEnd
+
+$break - break lines
+
+**********************************************************************************************/
+
+{
+  "options": [
+    {
+      "tile": {
+        "txt": "I live in...",
+        "fontSize": 18,
+        "fontColor": "0xffffff",
+        "fontName": "Arial"
+      },
+      "plainText": {
+        "txt": "$city",
+        "fontSize": 14,
+        "fontColor": "0xffffff",
+        "fontName": "Arial"
+      }
+    },
+    {
+      "tile": {
+        "txt": "I'll bike to work if",
+        "fontSize": 18,
+        "fontColor": "0xffffff",
+        "fontName": "Arial"
+      },
+      "plainText": {
+        "txt": "between $hourStart and $hourEnd, there's less than 10% chance of raining, the temperature is higher than $temperatureStart and lower than $temperatureEnd, and humidity varies between $humidityStart and $humidityEnd",
+        "fontSize": 14,
+        "fontColor": "0xffffff",
+        "fontName": "Arial"
+      }
+    }
+  ]
+}
