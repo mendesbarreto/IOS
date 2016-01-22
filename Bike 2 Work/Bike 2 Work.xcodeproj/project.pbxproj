@@ -19,6 +19,9 @@
 		A500B2E11C4E445000CA0C19 /* BWSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A500B2E01C4E445000CA0C19 /* BWSetupViewController.swift */; };
 		A500B2E51C4EA41F00CA0C19 /* Setup in Resources */ = {isa = PBXBuildFile; fileRef = A500B2E31C4EA41F00CA0C19 /* Setup */; };
 		A500B2E61C4EA41F00CA0C19 /* Setup.json in Resources */ = {isa = PBXBuildFile; fileRef = A500B2E41C4EA41F00CA0C19 /* Setup.json */; };
+		A52211B11C5290D900FC0343 /* Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52211B01C5290D900FC0343 /* Setup.swift */; };
+		A52211B31C5290FE00FC0343 /* Hour.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52211B21C5290FE00FC0343 /* Hour.swift */; };
+		A52211B51C52911E00FC0343 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52211B41C52911E00FC0343 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		A500B2E01C4E445000CA0C19 /* BWSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWSetupViewController.swift; sourceTree = "<group>"; };
 		A500B2E31C4EA41F00CA0C19 /* Setup */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Setup; sourceTree = "<group>"; };
 		A500B2E41C4EA41F00CA0C19 /* Setup.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Setup.json; sourceTree = "<group>"; };
+		A52211B01C5290D900FC0343 /* Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setup.swift; sourceTree = "<group>"; };
+		A52211B21C5290FE00FC0343 /* Hour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hour.swift; sourceTree = "<group>"; };
+		A52211B41C52911E00FC0343 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		A6B082D6B555E8B716381504 /* Pods-Bike 2 Work.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bike 2 Work.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bike 2 Work/Pods-Bike 2 Work.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +173,7 @@
 				A500B2AF1C4E400000CA0C19 /* Controller */,
 				A500B2AE1C4E3FFB00CA0C19 /* Model */,
 				A500B2AD1C4E3FF500CA0C19 /* View */,
+				A52211B01C5290D900FC0343 /* Setup.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -181,6 +188,8 @@
 		A500B2AE1C4E3FFB00CA0C19 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A52211B21C5290FE00FC0343 /* Hour.swift */,
+				A52211B41C52911E00FC0343 /* File.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -399,7 +408,10 @@
 			files = (
 				A500B27E1C4E3D8C00CA0C19 /* ViewController.swift in Sources */,
 				A500B27C1C4E3D8C00CA0C19 /* AppDelegate.swift in Sources */,
+				A52211B51C52911E00FC0343 /* File.swift in Sources */,
 				A500B2841C4E3D8C00CA0C19 /* Bike_2_Work.xcdatamodeld in Sources */,
+				A52211B31C5290FE00FC0343 /* Hour.swift in Sources */,
+				A52211B11C5290D900FC0343 /* Setup.swift in Sources */,
 				A500B2E11C4E445000CA0C19 /* BWSetupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

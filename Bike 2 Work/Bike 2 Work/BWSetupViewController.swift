@@ -11,37 +11,14 @@ import UIKit
 public class BWSetupViewController: UIViewController {
     @IBOutlet weak var textView:UITextView?
     
-    private let text:String = "between $hourStart and $hourEnd, there's less than 10% chance of raining, the temperature is higher than $temperatureStart and lower than $temperatureEnd, and humidity varies between $humidityStart and $humidityEnd";
-    
     override public func viewDidLoad()
     {
-        let data = NSData(contentsOfFile: "");
-        let parsedString = parseStringToView(" Eu sou o produto Eu sou o #link para o produto# ");
-        
         let tapRecognizer = UITapGestureRecognizer(target: self, action: Selector("tappedTextView:"));
         textView?.addGestureRecognizer(tapRecognizer);
-        textView?.selectable = true;
+        textView?.selectable = false;
         
-        let stringBuffer = NSMutableAttributedString();
-        
-        //Creating my attributes
-        let foregroundAttr = [ NSForegroundColorAttributeName: UIColor.greenColor() ];
-        let backgroundAttr = [ NSBackgroundColorAttributeName: UIColor.yellowColor() ];
-        let underLineAttr = [ NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleDouble.rawValue ];
-        let linkAttr = [ NSLinkAttributeName: NSURL(string: "settings:option")!];
-        
-        //Mutable Atribute string
-        let strAttr = NSMutableAttributedString(string: "Hello",attributes: foregroundAttr);
-        let strAttr2 = NSMutableAttributedString(string: " Hello2",attributes: backgroundAttr);
-        let strAttr3 = NSMutableAttributedString(string: " Hello3", attributes:linkAttr);
-        
-        stringBuffer.appendAttributedString(strAttr);
-        stringBuffer.appendAttributedString(strAttr2);
-        stringBuffer.appendAttributedString(strAttr3);
-        
-        textView?.attributedText = stringBuffer;
+        Setup.sharedInstance.updateBikeToWorkDiplayText(self.textView!);
     }
-    
     
     public func parseStringToView( str:NSString )
     {
