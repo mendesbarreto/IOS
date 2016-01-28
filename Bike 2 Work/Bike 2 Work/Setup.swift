@@ -16,21 +16,22 @@ public class Setup
     public static let whiteColorAttr = UIColor.whiteColor();
     
     public private(set) var displayText:NSMutableAttributedString;
-    public let userSettings: UserSettings;
     
-    public var citySetupTextSetup = BWAttributedStringInfo();
+    public var citySetupTextSetup:BWDisplayTextCityOption;
     public var notifySetpuTextSetup = BWAttributedStringInfo();
     public var bikeToWorkDisplayText:BWDiplayTextBikeToWorkOption;
     
     public init()
     {
+        
+        citySetupTextSetup = BWDisplayTextCityOption(title: "I live in... \n \n", rawText: "$city \n \n");
+        
         bikeToWorkDisplayText = BWDiplayTextBikeToWorkOption(
-            title:"Hello Man \n \n" ,
+            title:"Hello Man \n" ,
             rawText:"between $hourStart and $hourEnd, there's less than 10% chance of raining, the temperature is higher than $temperatureStart and lower than $temperatureEnd, and humidity varies between $humidityStart and $humidityEnd");
         
-        displayText = bikeToWorkDisplayText.updateText();
-        
-        userSettings = UserSettings();
+        displayText = citySetupTextSetup.updateText();
+        displayText.appendAttributedString(bikeToWorkDisplayText.updateText());
     }
     
     public func updateBikeToWorkDiplayText( textView:UITextView ){

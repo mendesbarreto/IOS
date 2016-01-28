@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -14,17 +14,17 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Content">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sa7-r4-f1X" userLabel="Setup">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTk-sm-tFy" userLabel="ButtonOk">
-                                        <rect key="frame" x="100" y="523" width="400" height="30"/>
+                                        <rect key="frame" x="100" y="491" width="120" height="30"/>
                                         <color key="backgroundColor" red="0.3411764705882353" green="0.66274509803921566" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="h4k-74-g4c"/>
+                                            <constraint firstAttribute="height" constant="30" id="o30-8Y-fVe"/>
                                         </constraints>
                                         <state key="normal" title="oK">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -34,47 +34,36 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyD-O0-N1k" userLabel="TextContent">
-                                        <rect key="frame" x="33" y="26" width="534" height="469"/>
-                                        <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IAE-mB-JSt" userLabel="TextContent">
-                                                <rect key="frame" x="0.0" y="0.0" width="534" height="469"/>
-                                                <string key="text">between $hourStart and $hourEnd, there's less than 10% chance of raining, the temperature is higher than $temperatureStart and lower than $temperatureEnd, and humidity varies between $humidityStart and $humidityEnd</string>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="IAE-mB-JSt" secondAttribute="bottom" id="4Ck-Xd-bUL"/>
-                                            <constraint firstItem="IAE-mB-JSt" firstAttribute="top" secondItem="ZyD-O0-N1k" secondAttribute="top" id="NKv-8d-1aX"/>
-                                            <constraint firstAttribute="trailing" secondItem="IAE-mB-JSt" secondAttribute="trailing" id="hnf-vU-dna"/>
-                                            <constraint firstItem="IAE-mB-JSt" firstAttribute="leading" secondItem="ZyD-O0-N1k" secondAttribute="leading" id="nSb-N0-IOw"/>
-                                            <constraint firstAttribute="height" constant="469" id="r1v-we-4AS"/>
-                                        </constraints>
-                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbt-iH-vH7">
+                                        <rect key="frame" x="8" y="19" width="304" height="464"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.066666666666666666" green="0.19215686274509805" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="ZyD-O0-N1k" firstAttribute="leading" secondItem="sa7-r4-f1X" secondAttribute="leading" constant="33" id="AwY-uw-JE1"/>
-                                    <constraint firstItem="ZyD-O0-N1k" firstAttribute="top" secondItem="sa7-r4-f1X" secondAttribute="top" constant="26" id="EQ1-iI-qvd"/>
-                                    <constraint firstItem="QTk-sm-tFy" firstAttribute="leading" secondItem="sa7-r4-f1X" secondAttribute="leading" constant="100" id="KGK-sS-gGb"/>
-                                    <constraint firstAttribute="trailing" secondItem="QTk-sm-tFy" secondAttribute="trailing" constant="100" id="bX9-lW-MMZ"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZyD-O0-N1k" secondAttribute="trailing" constant="33" id="gx8-tm-B01"/>
-                                    <constraint firstAttribute="bottom" secondItem="QTk-sm-tFy" secondAttribute="bottom" constant="27" id="nV0-ye-9wi"/>
+                                    <constraint firstAttribute="bottom" secondItem="QTk-sm-tFy" secondAttribute="bottom" constant="27" id="8Ks-iq-4gd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qbt-iH-vH7" secondAttribute="trailing" constant="8" id="SUK-Sm-lVq"/>
+                                    <constraint firstItem="Qbt-iH-vH7" firstAttribute="top" secondItem="sa7-r4-f1X" secondAttribute="top" constant="19" id="dKT-0r-qZm"/>
+                                    <constraint firstItem="QTk-sm-tFy" firstAttribute="top" secondItem="Qbt-iH-vH7" secondAttribute="bottom" constant="8" id="eoV-1F-U0v"/>
+                                    <constraint firstItem="QTk-sm-tFy" firstAttribute="leading" secondItem="sa7-r4-f1X" secondAttribute="leading" constant="100" id="mfh-DS-7l9"/>
+                                    <constraint firstItem="Qbt-iH-vH7" firstAttribute="leading" secondItem="sa7-r4-f1X" secondAttribute="leading" constant="8" id="p4g-O3-aVy"/>
+                                    <constraint firstAttribute="trailing" secondItem="QTk-sm-tFy" secondAttribute="trailing" constant="100" id="zRr-8n-zuK"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="sa7-r4-f1X" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GQ9-jb-f5x"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sa7-r4-f1X" secondAttribute="bottom" id="TST-uj-EfK"/>
-                            <constraint firstItem="sa7-r4-f1X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jQ8-5p-s6O"/>
-                            <constraint firstAttribute="trailing" secondItem="sa7-r4-f1X" secondAttribute="trailing" id="qK3-4R-h38"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sa7-r4-f1X" secondAttribute="bottom" id="FvK-hU-c9c"/>
+                            <constraint firstItem="sa7-r4-f1X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vac-f1-EIa"/>
+                            <constraint firstAttribute="trailing" secondItem="sa7-r4-f1X" secondAttribute="trailing" id="aCs-JC-hsU"/>
+                            <constraint firstItem="sa7-r4-f1X" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="rvc-xd-NWP"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="textView" destination="IAE-mB-JSt" id="kp5-9Z-RU0"/>
+                        <outlet property="textView" destination="Qbt-iH-vH7" id="zIg-iZ-8l5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

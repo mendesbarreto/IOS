@@ -21,8 +21,8 @@ public class BWDisplayTextCityOption: BWDisplayText
     
     
     public override func updateText() -> NSMutableAttributedString {
-        var tempTitle = NSMutableAttributedString();
-        var tempPlainText = NSMutableAttributedString();
+        var tempTitle = NSMutableAttributedString(string: titleAttInfo.text);
+        var tempPlainText = NSMutableAttributedString(string: textAttInfo.text);
         displayText = NSMutableAttributedString();
         
         StringHelper.replaceVariableNameToLinkString(
@@ -31,9 +31,11 @@ public class BWDisplayTextCityOption: BWDisplayText
             attString: &tempPlainText);
         
         StringHelper.addAtributeTo(string: &tempTitle, attributes: titleAttInfo.getAttributes());
+        StringHelper.addAtributeTo(string: &tempPlainText, attributes: textAttInfo.getAttributes());
         
         displayText.appendAttributedString(tempTitle);
         displayText.appendAttributedString(tempPlainText);
+        
         
         return displayText;
     }

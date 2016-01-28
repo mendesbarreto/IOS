@@ -25,6 +25,17 @@ public class BWDisplayText: BWDisplayTextProtocol{
         self.textAttInfo = BWAttributedStringInfo(str: rawText);
         self.titleAttInfo = BWAttributedStringInfo(str: title);
         self.displayText = NSMutableAttributedString();
+        
+        setDefaultValueTextInfo();
+        setDefaultValueTitleTextInfo();
+    }
+    
+    public func setDefaultValueTextInfo(){
+        textAttInfo.fontSize = 18;
+    }
+    
+    public func setDefaultValueTitleTextInfo(){
+        titleAttInfo.fontSize = 25;
     }
     
     public func updateText() ->NSMutableAttributedString{
