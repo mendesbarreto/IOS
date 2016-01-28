@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47E8DC7E68598509FA735B13 /* Pods_Bike_2_WorkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C13C49A10B4ECCC371CD9787 /* Pods_Bike_2_WorkTests.framework */; };
 		711F4AB247B90B3D891411B1 /* Pods_Bike_2_Work.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3B01AE4456880968F6500E /* Pods_Bike_2_Work.framework */; };
 		A500B27C1C4E3D8C00CA0C19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A500B27B1C4E3D8C00CA0C19 /* AppDelegate.swift */; };
 		A500B27E1C4E3D8C00CA0C19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A500B27D1C4E3D8C00CA0C19 /* ViewController.swift */; };
@@ -57,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		5A97E8C963134F20F4E6D97C /* Pods-Bike 2 Work.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bike 2 Work.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bike 2 Work/Pods-Bike 2 Work.debug.xcconfig"; sourceTree = "<group>"; };
+		5C9A0FB3F37F3434FEA9F787 /* Pods-Bike 2 WorkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bike 2 WorkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bike 2 WorkTests/Pods-Bike 2 WorkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D3B01AE4456880968F6500E /* Pods_Bike_2_Work.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bike_2_Work.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A500B2781C4E3D8C00CA0C19 /* Bike 2 Work.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bike 2 Work.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A500B27B1C4E3D8C00CA0C19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,8 @@
 		A564A1661C596F070049843F /* BWDisplayTextCityOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWDisplayTextCityOption.swift; sourceTree = "<group>"; };
 		A564A1681C596F900049843F /* VariablesNameConsts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariablesNameConsts.swift; sourceTree = "<group>"; };
 		A6B082D6B555E8B716381504 /* Pods-Bike 2 Work.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bike 2 Work.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bike 2 Work/Pods-Bike 2 Work.release.xcconfig"; sourceTree = "<group>"; };
+		C13C49A10B4ECCC371CD9787 /* Pods_Bike_2_WorkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bike_2_WorkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F543A0FF2E3068ADA472B6BA /* Pods-Bike 2 WorkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bike 2 WorkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bike 2 WorkTests/Pods-Bike 2 WorkTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E8DC7E68598509FA735B13 /* Pods_Bike_2_WorkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				9D3B01AE4456880968F6500E /* Pods_Bike_2_Work.framework */,
+				C13C49A10B4ECCC371CD9787 /* Pods_Bike_2_WorkTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,6 +140,8 @@
 			children = (
 				5A97E8C963134F20F4E6D97C /* Pods-Bike 2 Work.debug.xcconfig */,
 				A6B082D6B555E8B716381504 /* Pods-Bike 2 Work.release.xcconfig */,
+				5C9A0FB3F37F3434FEA9F787 /* Pods-Bike 2 WorkTests.debug.xcconfig */,
+				F543A0FF2E3068ADA472B6BA /* Pods-Bike 2 WorkTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -295,9 +303,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A500B2A61C4E3D8C00CA0C19 /* Build configuration list for PBXNativeTarget "Bike 2 WorkTests" */;
 			buildPhases = (
+				CFD580D5149E60C9CADCD690 /* Check Pods Manifest.lock */,
 				A500B28B1C4E3D8C00CA0C19 /* Sources */,
 				A500B28C1C4E3D8C00CA0C19 /* Frameworks */,
 				A500B28D1C4E3D8C00CA0C19 /* Resources */,
+				A39D7F9635DA0F3D53A7FFBD /* Embed Pods Frameworks */,
+				D0EE2E3ED41C8ABCB412877A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -447,6 +458,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A39D7F9635DA0F3D53A7FFBD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bike 2 WorkTests/Pods-Bike 2 WorkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFD580D5149E60C9CADCD690 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D0EE2E3ED41C8ABCB412877A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bike 2 WorkTests/Pods-Bike 2 WorkTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -640,6 +696,7 @@
 		};
 		A500B2A71C4E3D8C00CA0C19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C9A0FB3F37F3434FEA9F787 /* Pods-Bike 2 WorkTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Bike 2 WorkTests/Info.plist";
@@ -652,6 +709,7 @@
 		};
 		A500B2A81C4E3D8C00CA0C19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F543A0FF2E3068ADA472B6BA /* Pods-Bike 2 WorkTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Bike 2 WorkTests/Info.plist";

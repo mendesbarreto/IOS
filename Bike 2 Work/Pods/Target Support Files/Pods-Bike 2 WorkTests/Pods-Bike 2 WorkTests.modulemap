@@ -1,0 +1,6 @@
+framework module Pods_Bike_2_WorkTests {
+  umbrella header "Pods-Bike 2 WorkTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
