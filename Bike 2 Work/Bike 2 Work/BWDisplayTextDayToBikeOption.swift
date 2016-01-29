@@ -1,16 +1,14 @@
 //
-//  BWDisplayTextCityOption.swift
+//  BWDisplayTextDayToBikeOption.swift
 //  Bike 2 Work
 //
-//  Created by Douglas Barreto on 1/27/16.
+//  Created by Douglas Barreto on 1/29/16.
 //  Copyright © 2016 Douglas Mendes. All rights reserved.
 //
 
 import Foundation
-import UIKit
 
-
-public class BWDisplayTextCityOption: BWDisplayText
+public class BWDisplayTextDayToBikeOption : BWDisplayText
 {
     private let userSettings:UserSettings;
     
@@ -18,7 +16,6 @@ public class BWDisplayTextCityOption: BWDisplayText
         userSettings = UserSettings.sharedInstance;
         super.init(title: title, rawText:rawText);
     }
-    
     
     public override func updateText() -> NSMutableAttributedString {
         var tempTitle = NSMutableAttributedString(string: titleAttInfo.text);
@@ -38,4 +35,6 @@ public class BWDisplayTextCityOption: BWDisplayText
         
         return displayText;
     }
+    
+    
 }

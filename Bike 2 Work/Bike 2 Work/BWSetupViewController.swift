@@ -9,15 +9,30 @@
 import UIKit
 
 public class BWSetupViewController: UIViewController {
-    @IBOutlet weak var textView:UITextView?
+    @IBOutlet weak var cityTextView:UITextView?;
+    @IBOutlet weak var bikeToWorkTextView:UITextView?;
+    @IBOutlet weak var dayToBikeTextView:UITextView?;
     
     override public func viewDidLoad()
     {
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: Selector("tappedTextView:"));
-        textView?.addGestureRecognizer(tapRecognizer);
-        textView?.selectable = false;
+        let tapRecognizerC = UITapGestureRecognizer(target: self, action: Selector("tappedTextView:"));
+        cityTextView?.userInteractionEnabled = true;
+        cityTextView?.selectable = false;
+        cityTextView?.addGestureRecognizer(tapRecognizerC);
         
-        Setup.sharedInstance.updateBikeToWorkDiplayText(self.textView!);
+        let tapRecognizerB = UITapGestureRecognizer(target: self, action: Selector("tappedTextView:"));
+        bikeToWorkTextView?.userInteractionEnabled = true;
+        bikeToWorkTextView?.selectable = false;
+        bikeToWorkTextView?.addGestureRecognizer(tapRecognizerB);
+        
+        let tapRecognizerD = UITapGestureRecognizer(target: self, action: Selector("tappedTextView:"));
+        dayToBikeTextView?.userInteractionEnabled = true;
+        dayToBikeTextView?.selectable = false;
+        dayToBikeTextView?.addGestureRecognizer(tapRecognizerD);
+        
+        Setup.sharedInstance.updateCitykDiplayText(cityTextView!);
+        Setup.sharedInstance.updateBikeToWorkDiplayText(bikeToWorkTextView!);
+        Setup.sharedInstance.updateDaysToBikeDiplayText(dayToBikeTextView!);
     }
     
     public func parseStringToView( str:NSString )

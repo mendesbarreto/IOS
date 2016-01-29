@@ -37,6 +37,7 @@
 		A564A1651C5961FF0049843F /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564A1641C5961FF0049843F /* UIColorExtensions.swift */; };
 		A564A1671C596F070049843F /* BWDisplayTextCityOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564A1661C596F070049843F /* BWDisplayTextCityOption.swift */; };
 		A564A1691C596F900049843F /* VariablesNameConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564A1681C596F900049843F /* VariablesNameConsts.swift */; };
+		A5C5E3491C5C058300C0819C /* BWDisplayTextDayToBikeOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5E3481C5C058300C0819C /* BWDisplayTextDayToBikeOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		A564A1641C5961FF0049843F /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		A564A1661C596F070049843F /* BWDisplayTextCityOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWDisplayTextCityOption.swift; sourceTree = "<group>"; };
 		A564A1681C596F900049843F /* VariablesNameConsts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariablesNameConsts.swift; sourceTree = "<group>"; };
+		A5C5E3481C5C058300C0819C /* BWDisplayTextDayToBikeOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWDisplayTextDayToBikeOption.swift; sourceTree = "<group>"; };
 		A6B082D6B555E8B716381504 /* Pods-Bike 2 Work.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bike 2 Work.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bike 2 Work/Pods-Bike 2 Work.release.xcconfig"; sourceTree = "<group>"; };
 		C13C49A10B4ECCC371CD9787 /* Pods_Bike_2_WorkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bike_2_WorkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F543A0FF2E3068ADA472B6BA /* Pods-Bike 2 WorkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bike 2 WorkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bike 2 WorkTests/Pods-Bike 2 WorkTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 				A564A15E1C5948FC0049843F /* BWDiplayTextProtocol.swift */,
 				A564A1601C594BC90049843F /* BWDisplayText.swift */,
 				A564A1661C596F070049843F /* BWDisplayTextCityOption.swift */,
+				A5C5E3481C5C058300C0819C /* BWDisplayTextDayToBikeOption.swift */,
 			);
 			name = Text;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				A52211B91C52DFF900FC0343 /* UserSettings.swift in Sources */,
 				A52211B11C5290D900FC0343 /* Setup.swift in Sources */,
 				A500B2E11C4E445000CA0C19 /* BWSetupViewController.swift in Sources */,
+				A5C5E3491C5C058300C0819C /* BWDisplayTextDayToBikeOption.swift in Sources */,
 				A52211BB1C52E12D00FC0343 /* HourToBike.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,23 +10,19 @@ import Foundation
 
 public class Humidity : ConstraintNumbers
 {
-    public init()
-    {
+    public init(){
         super.init(start: 10, end: 30);
     }
     
-    public func getStartHumidityFormated() ->String
-    {
+    public func getStartHumidityFormated() ->String{
         return Humidity.getHumidityFormated(start);
     }
     
-    public func getEndtHumidityFormated() ->String
-    {
+    public func getEndtHumidityFormated() ->String{
         return Humidity.getHumidityFormated(end);
     }
     
-    public class func getHumidityFormated( humidity: Int) ->String
-    {
+    public class func getHumidityFormated( humidity: Int) ->String{
         return "\(humidity)%";
     }
 }
