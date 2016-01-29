@@ -13,6 +13,9 @@ end
 target 'Bike 2 WorkTests' do
 pod 'Quick'
 pod 'Nimble'
+pod 'Alamofire'
+pod 'AlamofireObjectMapper'
+
 end
 
 target 'Bike 2 WorkUITests' do

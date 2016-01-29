@@ -15,6 +15,9 @@ public class BWSetupViewController: UIViewController {
     
     override public func viewDidLoad()
     {
+        
+        
+        
         let tapRecognizerC = UITapGestureRecognizer(target: self, action: Selector("tappedTextView:"));
         cityTextView?.userInteractionEnabled = true;
         cityTextView?.selectable = false;

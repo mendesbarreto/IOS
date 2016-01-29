@@ -22,16 +22,16 @@ public class BWDisplayTextDayToBikeOption : BWDisplayText
         var tempPlainText = NSMutableAttributedString(string: textAttInfo.text);
         displayText = NSMutableAttributedString();
         
-        StringHelper.replaceVariableNameToLinkString(
-            kCityVariableName,
-            valueToAdd: userSettings.city,
-            attString: &tempPlainText);
-        
-        StringHelper.addAtributeTo(string: &tempTitle, attributes: titleAttInfo.getAttributes());
-        StringHelper.addAtributeTo(string: &tempPlainText, attributes: textAttInfo.getAttributes());
-        
-        displayText.appendAttributedString(tempTitle);
-        displayText.appendAttributedString(tempPlainText);
+        //        StringHelper.replaceVariableNameToLinkString(
+        //            kCityVariableName,
+        //            valueToAdd: userSettings.city,
+        //            attString: &tempPlainText);
+        //        
+        //        StringHelper.addAtributeTo(string: &tempTitle, attributes: titleAttInfo.getAttributes());
+        //        StringHelper.addAtributeTo(string: &tempPlainText, attributes: textAttInfo.getAttributes());
+        //        
+        //        displayText.appendAttributedString(tempTitle);
+        //        displayText.appendAttributedString(tempPlainText);
         
         return displayText;
     }

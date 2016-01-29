@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Alamofire
 
 public class Setup
 {
@@ -23,7 +24,7 @@ public class Setup
     
     public init()
     {
-        
+        Alamo
         citySetupTextSetup = BWDisplayTextCityOption(title: "I live in...", rawText: "$city");
         
         bikeToWorkDisplayText = BWDiplayTextBikeToWorkOption(
@@ -52,10 +53,9 @@ public class Setup
     }
     
     public func updateDaysToBikeDiplayText( textView:UITextView ){
-        
-        //        textView.attributedText = bikeToWorkDisplayText.updateText();
-        //        textView.linkTextAttributes = [NSForegroundColorAttributeName: Setup.greenColorAttr,
-        //            NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleSingle.rawValue];
+        textView.attributedText = daySetpuTextSetup.updateText();
+        textView.linkTextAttributes = [NSForegroundColorAttributeName: Setup.greenColorAttr,
+            NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleSingle.rawValue];
     }
     
     

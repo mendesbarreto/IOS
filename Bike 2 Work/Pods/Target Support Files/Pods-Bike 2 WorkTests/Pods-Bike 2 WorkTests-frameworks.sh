@@ -84,10 +84,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-Bike 2 WorkTests/Alamofire.framework"
+  install_framework "Pods-Bike 2 WorkTests/AlamofireObjectMapper.framework"
+  install_framework "Pods-Bike 2 WorkTests/ObjectMapper.framework"
   install_framework "Pods-Bike 2 WorkTests/Nimble.framework"
   install_framework "Pods-Bike 2 WorkTests/Quick.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-Bike 2 WorkTests/Alamofire.framework"
+  install_framework "Pods-Bike 2 WorkTests/AlamofireObjectMapper.framework"
+  install_framework "Pods-Bike 2 WorkTests/ObjectMapper.framework"
   install_framework "Pods-Bike 2 WorkTests/Nimble.framework"
   install_framework "Pods-Bike 2 WorkTests/Quick.framework"
 fi
