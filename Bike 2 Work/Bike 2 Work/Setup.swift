@@ -24,7 +24,18 @@ public class Setup
     
     public init()
     {
-        Alamo
+        Alamofire.request(.GET, "https://api.dribbble.com/v1/shots?access_token=22e5b3c100a0e1b4aa3f66d4f95f9101895b3829dea28fd651e4b824817bb295")
+            .responseJSON{ response in
+                print(response.request)  // original URL request
+                print(response.response) // URL response
+                print(response.data)     // server data
+                print(response.result)   // result of response serialization
+                
+                if let JSON = response.result.value {
+                    print("JSON: \(JSON)")
+                }
+        }
+        
         citySetupTextSetup = BWDisplayTextCityOption(title: "I live in...", rawText: "$city");
         
         bikeToWorkDisplayText = BWDiplayTextBikeToWorkOption(

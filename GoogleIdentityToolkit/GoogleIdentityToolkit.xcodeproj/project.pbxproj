@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011B9C34A4670BEAAAB7B0D3 /* Pods_GoogleIdentityToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F35C7F229F806AAC15CA38 /* Pods_GoogleIdentityToolkit.framework */; };
+		A55ED2151C60B890002C7DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55ED2141C60B890002C7DEC /* AppDelegate.swift */; };
+		A55ED2171C60B890002C7DEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55ED2161C60B890002C7DEC /* ViewController.swift */; };
+		A55ED21A1C60B890002C7DEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55ED2181C60B890002C7DEC /* Main.storyboard */; };
+		A55ED21C1C60B890002C7DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55ED21B1C60B890002C7DEC /* Assets.xcassets */; };
+		A55ED21F1C60B890002C7DEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55ED21D1C60B890002C7DEC /* LaunchScreen.storyboard */; };
+		A55ED22A1C60B890002C7DEC /* GoogleIdentityToolkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55ED2291C60B890002C7DEC /* GoogleIdentityToolkitTests.swift */; };
+		A55ED2351C60B890002C7DEC /* GoogleIdentityToolkitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55ED2341C60B890002C7DEC /* GoogleIdentityToolkitUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A55ED2261C60B890002C7DEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A55ED2091C60B890002C7DEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A55ED2101C60B890002C7DEC;
+			remoteInfo = GoogleIdentityToolkit;
+		};
+		A55ED2311C60B890002C7DEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A55ED2091C60B890002C7DEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A55ED2101C60B890002C7DEC;
+			remoteInfo = GoogleIdentityToolkit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07A435A779F6199131C8043A /* Pods-GoogleIdentityToolkit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleIdentityToolkit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleIdentityToolkit/Pods-GoogleIdentityToolkit.debug.xcconfig"; sourceTree = "<group>"; };
+		1014CAC8435CB82D44D09FE6 /* Pods-GoogleIdentityToolkit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleIdentityToolkit.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleIdentityToolkit/Pods-GoogleIdentityToolkit.release.xcconfig"; sourceTree = "<group>"; };
+		A55ED2111C60B890002C7DEC /* GoogleIdentityToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleIdentityToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A55ED2141C60B890002C7DEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A55ED2161C60B890002C7DEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A55ED2191C60B890002C7DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A55ED21B1C60B890002C7DEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A55ED21E1C60B890002C7DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A55ED2201C60B890002C7DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A55ED2251C60B890002C7DEC /* GoogleIdentityToolkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleIdentityToolkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A55ED2291C60B890002C7DEC /* GoogleIdentityToolkitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleIdentityToolkitTests.swift; sourceTree = "<group>"; };
+		A55ED22B1C60B890002C7DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A55ED2301C60B890002C7DEC /* GoogleIdentityToolkitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleIdentityToolkitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A55ED2341C60B890002C7DEC /* GoogleIdentityToolkitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleIdentityToolkitUITests.swift; sourceTree = "<group>"; };
+		A55ED2361C60B890002C7DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9F35C7F229F806AAC15CA38 /* Pods_GoogleIdentityToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleIdentityToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A55ED20E1C60B890002C7DEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011B9C34A4670BEAAAB7B0D3 /* Pods_GoogleIdentityToolkit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A55ED2221C60B890002C7DEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A55ED22D1C60B890002C7DEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A55ED2081C60B890002C7DEC = {
+			isa = PBXGroup;
+			children = (
+				A55ED2131C60B890002C7DEC /* GoogleIdentityToolkit */,
+				A55ED2281C60B890002C7DEC /* GoogleIdentityToolkitTests */,
+				A55ED2331C60B890002C7DEC /* GoogleIdentityToolkitUITests */,
+				A55ED2121C60B890002C7DEC /* Products */,
+				CB7AA31E3AE9A0F749B75CAB /* Pods */,
+				BC1234B4264013C6444FDA57 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A55ED2121C60B890002C7DEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A55ED2111C60B890002C7DEC /* GoogleIdentityToolkit.app */,
+				A55ED2251C60B890002C7DEC /* GoogleIdentityToolkitTests.xctest */,
+				A55ED2301C60B890002C7DEC /* GoogleIdentityToolkitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A55ED2131C60B890002C7DEC /* GoogleIdentityToolkit */ = {
+			isa = PBXGroup;
+			children = (
+				A55ED2141C60B890002C7DEC /* AppDelegate.swift */,
+				A55ED2161C60B890002C7DEC /* ViewController.swift */,
+				A55ED2181C60B890002C7DEC /* Main.storyboard */,
+				A55ED21B1C60B890002C7DEC /* Assets.xcassets */,
+				A55ED21D1C60B890002C7DEC /* LaunchScreen.storyboard */,
+				A55ED2201C60B890002C7DEC /* Info.plist */,
+			);
+			path = GoogleIdentityToolkit;
+			sourceTree = "<group>";
+		};
+		A55ED2281C60B890002C7DEC /* GoogleIdentityToolkitTests */ = {
+			isa = PBXGroup;
+			children = (
+				A55ED2291C60B890002C7DEC /* GoogleIdentityToolkitTests.swift */,
+				A55ED22B1C60B890002C7DEC /* Info.plist */,
+			);
+			path = GoogleIdentityToolkitTests;
+			sourceTree = "<group>";
+		};
+		A55ED2331C60B890002C7DEC /* GoogleIdentityToolkitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A55ED2341C60B890002C7DEC /* GoogleIdentityToolkitUITests.swift */,
+				A55ED2361C60B890002C7DEC /* Info.plist */,
+			);
+			path = GoogleIdentityToolkitUITests;
+			sourceTree = "<group>";
+		};
+		BC1234B4264013C6444FDA57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9F35C7F229F806AAC15CA38 /* Pods_GoogleIdentityToolkit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB7AA31E3AE9A0F749B75CAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07A435A779F6199131C8043A /* Pods-GoogleIdentityToolkit.debug.xcconfig */,
+				1014CAC8435CB82D44D09FE6 /* Pods-GoogleIdentityToolkit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A55ED2101C60B890002C7DEC /* GoogleIdentityToolkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A55ED2391C60B890002C7DEC /* Build configuration list for PBXNativeTarget "GoogleIdentityToolkit" */;
+			buildPhases = (
+				4E5542A0DB70AD9CD1187FEB /* Check Pods Manifest.lock */,
+				A55ED20D1C60B890002C7DEC /* Sources */,
+				A55ED20E1C60B890002C7DEC /* Frameworks */,
+				A55ED20F1C60B890002C7DEC /* Resources */,
+				466EF9FB0AAE73064202C4A9 /* Embed Pods Frameworks */,
+				7AE8A48E7CC1AF11FD522D2E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleIdentityToolkit;
+			productName = GoogleIdentityToolkit;
+			productReference = A55ED2111C60B890002C7DEC /* GoogleIdentityToolkit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A55ED2241C60B890002C7DEC /* GoogleIdentityToolkitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A55ED23C1C60B890002C7DEC /* Build configuration list for PBXNativeTarget "GoogleIdentityToolkitTests" */;
+			buildPhases = (
+				A55ED2211C60B890002C7DEC /* Sources */,
+				A55ED2221C60B890002C7DEC /* Frameworks */,
+				A55ED2231C60B890002C7DEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A55ED2271C60B890002C7DEC /* PBXTargetDependency */,
+			);
+			name = GoogleIdentityToolkitTests;
+			productName = GoogleIdentityToolkitTests;
+			productReference = A55ED2251C60B890002C7DEC /* GoogleIdentityToolkitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A55ED22F1C60B890002C7DEC /* GoogleIdentityToolkitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A55ED23F1C60B890002C7DEC /* Build configuration list for PBXNativeTarget "GoogleIdentityToolkitUITests" */;
+			buildPhases = (
+				A55ED22C1C60B890002C7DEC /* Sources */,
+				A55ED22D1C60B890002C7DEC /* Frameworks */,
+				A55ED22E1C60B890002C7DEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A55ED2321C60B890002C7DEC /* PBXTargetDependency */,
+			);
+			name = GoogleIdentityToolkitUITests;
+			productName = GoogleIdentityToolkitUITests;
+			productReference = A55ED2301C60B890002C7DEC /* GoogleIdentityToolkitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A55ED2091C60B890002C7DEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Concrete Solutions";
+				TargetAttributes = {
+					A55ED2101C60B890002C7DEC = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					A55ED2241C60B890002C7DEC = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = A55ED2101C60B890002C7DEC;
+					};
+					A55ED22F1C60B890002C7DEC = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = A55ED2101C60B890002C7DEC;
+					};
+				};
+			};
+			buildConfigurationList = A55ED20C1C60B890002C7DEC /* Build configuration list for PBXProject "GoogleIdentityToolkit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A55ED2081C60B890002C7DEC;
+			productRefGroup = A55ED2121C60B890002C7DEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A55ED2101C60B890002C7DEC /* GoogleIdentityToolkit */,
+				A55ED2241C60B890002C7DEC /* GoogleIdentityToolkitTests */,
+				A55ED22F1C60B890002C7DEC /* GoogleIdentityToolkitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A55ED20F1C60B890002C7DEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A55ED21F1C60B890002C7DEC /* LaunchScreen.storyboard in Resources */,
+				A55ED21C1C60B890002C7DEC /* Assets.xcassets in Resources */,
+				A55ED21A1C60B890002C7DEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A55ED2231C60B890002C7DEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A55ED22E1C60B890002C7DEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		466EF9FB0AAE73064202C4A9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleIdentityToolkit/Pods-GoogleIdentityToolkit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E5542A0DB70AD9CD1187FEB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7AE8A48E7CC1AF11FD522D2E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleIdentityToolkit/Pods-GoogleIdentityToolkit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A55ED20D1C60B890002C7DEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A55ED2171C60B890002C7DEC /* ViewController.swift in Sources */,
+				A55ED2151C60B890002C7DEC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A55ED2211C60B890002C7DEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A55ED22A1C60B890002C7DEC /* GoogleIdentityToolkitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A55ED22C1C60B890002C7DEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A55ED2351C60B890002C7DEC /* GoogleIdentityToolkitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A55ED2271C60B890002C7DEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A55ED2101C60B890002C7DEC /* GoogleIdentityToolkit */;
+			targetProxy = A55ED2261C60B890002C7DEC /* PBXContainerItemProxy */;
+		};
+		A55ED2321C60B890002C7DEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A55ED2101C60B890002C7DEC /* GoogleIdentityToolkit */;
+			targetProxy = A55ED2311C60B890002C7DEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A55ED2181C60B890002C7DEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A55ED2191C60B890002C7DEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A55ED21D1C60B890002C7DEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A55ED21E1C60B890002C7DEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A55ED2371C60B890002C7DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A55ED2381C60B890002C7DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A55ED23A1C60B890002C7DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07A435A779F6199131C8043A /* Pods-GoogleIdentityToolkit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GoogleIdentityToolkit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglas.GoogleIdentityToolkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A55ED23B1C60B890002C7DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1014CAC8435CB82D44D09FE6 /* Pods-GoogleIdentityToolkit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GoogleIdentityToolkit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglas.GoogleIdentityToolkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A55ED23D1C60B890002C7DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GoogleIdentityToolkitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglas.GoogleIdentityToolkitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoogleIdentityToolkit.app/GoogleIdentityToolkit";
+			};
+			name = Debug;
+		};
+		A55ED23E1C60B890002C7DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GoogleIdentityToolkitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglas.GoogleIdentityToolkitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoogleIdentityToolkit.app/GoogleIdentityToolkit";
+			};
+			name = Release;
+		};
+		A55ED2401C60B890002C7DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GoogleIdentityToolkitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglas.GoogleIdentityToolkitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GoogleIdentityToolkit;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A55ED2411C60B890002C7DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GoogleIdentityToolkitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglas.GoogleIdentityToolkitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GoogleIdentityToolkit;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A55ED20C1C60B890002C7DEC /* Build configuration list for PBXProject "GoogleIdentityToolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A55ED2371C60B890002C7DEC /* Debug */,
+				A55ED2381C60B890002C7DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A55ED2391C60B890002C7DEC /* Build configuration list for PBXNativeTarget "GoogleIdentityToolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A55ED23A1C60B890002C7DEC /* Debug */,
+				A55ED23B1C60B890002C7DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A55ED23C1C60B890002C7DEC /* Build configuration list for PBXNativeTarget "GoogleIdentityToolkitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A55ED23D1C60B890002C7DEC /* Debug */,
+				A55ED23E1C60B890002C7DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A55ED23F1C60B890002C7DEC /* Build configuration list for PBXNativeTarget "GoogleIdentityToolkitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A55ED2401C60B890002C7DEC /* Debug */,
+				A55ED2411C60B890002C7DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A55ED2091C60B890002C7DEC /* Project object */;
+}
