@@ -4,7 +4,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'GoogleIdentityToolkit' do
-pod 'GoogleIdentityToolkit'
+pod 'Google/SignIn'
 end
 
 target 'GoogleIdentityToolkitTests' do

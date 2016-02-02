@@ -1,6 +1,10 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## Google
+
+Copyright 2015 Google Inc.
+
 ## GoogleAppUtilities
 
 Copyright 2015 Google Inc.
@@ -9,15 +13,11 @@ Copyright 2015 Google Inc.
 
 Copyright 2015 Google Inc.
 
-## GoogleIdentityToolkit
-
-Copyright 2015 Google Inc. All Rights Reserved.
-
-## GoogleNetworkingUtilities
+## GoogleInterchangeUtilities
 
 Copyright 2015 Google Inc.
 
-## GoogleParsingUtilities
+## GoogleNetworkingUtilities
 
 Copyright 2015 Google Inc.
 

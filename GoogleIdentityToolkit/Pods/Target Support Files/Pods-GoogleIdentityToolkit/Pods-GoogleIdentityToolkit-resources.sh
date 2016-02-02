@@ -58,11 +58,9 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "GoogleIdentityToolkit/Resources/GITkit.bundle"
   install_resource "GoogleSignIn/Resources/GoogleSignIn.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "GoogleIdentityToolkit/Resources/GITkit.bundle"
   install_resource "GoogleSignIn/Resources/GoogleSignIn.bundle"
 fi
 
