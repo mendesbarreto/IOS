@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DateButtonView" customModule="CollectionViewController" customModuleProvider="target">
+            <connections>
+                <outlet property="dayLabel" destination="gLs-fS-UfJ" id="3JQ-cq-ppF"/>
+                <outlet property="hoursLabel" destination="Ijr-yd-xbl" id="4XJ-MR-DAe"/>
+                <outlet property="prefixDayLabel" destination="jRa-4L-sPA" id="rla-DI-EnM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mEU-Rd-M0b">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRa-4L-sPA">
+                            <rect key="frame" x="279" y="0.0" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLs-fS-UfJ">
+                            <rect key="frame" x="279" y="290" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijr-yd-xbl">
+                            <rect key="frame" x="279" y="580" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mEU-Rd-M0b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7De-ON-fPs"/>
+                <constraint firstItem="mEU-Rd-M0b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7ux-gw-hyc"/>
+                <constraint firstAttribute="bottom" secondItem="mEU-Rd-M0b" secondAttribute="bottom" id="OLS-VU-QxA"/>
+                <constraint firstAttribute="trailing" secondItem="mEU-Rd-M0b" secondAttribute="trailing" id="i5P-I8-ClO"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="prefixDay" value="TER"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="day" value="18"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="hours" value="10:00"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="302" y="252"/>
+        </view>
+    </objects>
+</document>

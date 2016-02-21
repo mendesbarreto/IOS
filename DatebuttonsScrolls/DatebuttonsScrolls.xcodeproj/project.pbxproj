@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5E4CBE41C77BFDE00D7EA07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4CBE31C77BFDE00D7EA07 /* AppDelegate.swift */; };
+		A5E4CBE61C77BFDE00D7EA07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4CBE51C77BFDE00D7EA07 /* ViewController.swift */; };
+		A5E4CBE91C77BFDE00D7EA07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E4CBE71C77BFDE00D7EA07 /* Main.storyboard */; };
+		A5E4CBEB1C77BFDE00D7EA07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E4CBEA1C77BFDE00D7EA07 /* Assets.xcassets */; };
+		A5E4CBEE1C77BFDE00D7EA07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E4CBEC1C77BFDE00D7EA07 /* LaunchScreen.storyboard */; };
+		A5E4CBF91C77BFDE00D7EA07 /* DatebuttonsScrollsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4CBF81C77BFDE00D7EA07 /* DatebuttonsScrollsTests.swift */; };
+		A5E4CC041C77BFDE00D7EA07 /* DatebuttonsScrollsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4CC031C77BFDE00D7EA07 /* DatebuttonsScrollsUITests.swift */; };
+		A5E4CC131C77C09F00D7EA07 /* DateButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4CC121C77C09F00D7EA07 /* DateButtonView.swift */; };
+		A5E4CC151C77C15000D7EA07 /* DateButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E4CC141C77C15000D7EA07 /* DateButtonView.xib */; };
+		A5E4CC191C78F1ED00D7EA07 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4CC181C78F1ED00D7EA07 /* UIView.swift */; };
+		A5E4CC1B1C78F31200D7EA07 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4CC1A1C78F31200D7EA07 /* NSObject.swift */; };
+		A5E4CC1D1C792C9300D7EA07 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4CC1C1C792C9300D7EA07 /* ButtonView.swift */; };
+		A5E4CC1F1C792DDB00D7EA07 /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E4CC1E1C792DDB00D7EA07 /* ButtonView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5E4CBF51C77BFDE00D7EA07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5E4CBD81C77BFDE00D7EA07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5E4CBDF1C77BFDE00D7EA07;
+			remoteInfo = DatebuttonsScrolls;
+		};
+		A5E4CC001C77BFDE00D7EA07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5E4CBD81C77BFDE00D7EA07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5E4CBDF1C77BFDE00D7EA07;
+			remoteInfo = DatebuttonsScrolls;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5E4CBE01C77BFDE00D7EA07 /* DatebuttonsScrolls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatebuttonsScrolls.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E4CBE31C77BFDE00D7EA07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5E4CBE51C77BFDE00D7EA07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5E4CBE81C77BFDE00D7EA07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5E4CBEA1C77BFDE00D7EA07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5E4CBED1C77BFDE00D7EA07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5E4CBEF1C77BFDE00D7EA07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E4CBF41C77BFDE00D7EA07 /* DatebuttonsScrollsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatebuttonsScrollsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E4CBF81C77BFDE00D7EA07 /* DatebuttonsScrollsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatebuttonsScrollsTests.swift; sourceTree = "<group>"; };
+		A5E4CBFA1C77BFDE00D7EA07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E4CBFF1C77BFDE00D7EA07 /* DatebuttonsScrollsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatebuttonsScrollsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E4CC031C77BFDE00D7EA07 /* DatebuttonsScrollsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatebuttonsScrollsUITests.swift; sourceTree = "<group>"; };
+		A5E4CC051C77BFDE00D7EA07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E4CC121C77C09F00D7EA07 /* DateButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateButtonView.swift; sourceTree = "<group>"; };
+		A5E4CC141C77C15000D7EA07 /* DateButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateButtonView.xib; sourceTree = "<group>"; };
+		A5E4CC181C78F1ED00D7EA07 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A5E4CC1A1C78F31200D7EA07 /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		A5E4CC1C1C792C9300D7EA07 /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		A5E4CC1E1C792DDB00D7EA07 /* ButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5E4CBDD1C77BFDE00D7EA07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E4CBF11C77BFDE00D7EA07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E4CBFC1C77BFDE00D7EA07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5E4CBD71C77BFDE00D7EA07 = {
+			isa = PBXGroup;
+			children = (
+				A5E4CBE21C77BFDE00D7EA07 /* DatebuttonsScrolls */,
+				A5E4CBF71C77BFDE00D7EA07 /* DatebuttonsScrollsTests */,
+				A5E4CC021C77BFDE00D7EA07 /* DatebuttonsScrollsUITests */,
+				A5E4CBE11C77BFDE00D7EA07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5E4CBE11C77BFDE00D7EA07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5E4CBE01C77BFDE00D7EA07 /* DatebuttonsScrolls.app */,
+				A5E4CBF41C77BFDE00D7EA07 /* DatebuttonsScrollsTests.xctest */,
+				A5E4CBFF1C77BFDE00D7EA07 /* DatebuttonsScrollsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5E4CBE21C77BFDE00D7EA07 /* DatebuttonsScrolls */ = {
+			isa = PBXGroup;
+			children = (
+				A5E4CC161C78F16400D7EA07 /* Extensions */,
+				A5E4CC111C77C01500D7EA07 /* ButtonDateView */,
+				A5E4CBE31C77BFDE00D7EA07 /* AppDelegate.swift */,
+				A5E4CBE51C77BFDE00D7EA07 /* ViewController.swift */,
+				A5E4CBE71C77BFDE00D7EA07 /* Main.storyboard */,
+				A5E4CBEA1C77BFDE00D7EA07 /* Assets.xcassets */,
+				A5E4CBEC1C77BFDE00D7EA07 /* LaunchScreen.storyboard */,
+				A5E4CBEF1C77BFDE00D7EA07 /* Info.plist */,
+			);
+			path = DatebuttonsScrolls;
+			sourceTree = "<group>";
+		};
+		A5E4CBF71C77BFDE00D7EA07 /* DatebuttonsScrollsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5E4CBF81C77BFDE00D7EA07 /* DatebuttonsScrollsTests.swift */,
+				A5E4CBFA1C77BFDE00D7EA07 /* Info.plist */,
+			);
+			path = DatebuttonsScrollsTests;
+			sourceTree = "<group>";
+		};
+		A5E4CC021C77BFDE00D7EA07 /* DatebuttonsScrollsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5E4CC031C77BFDE00D7EA07 /* DatebuttonsScrollsUITests.swift */,
+				A5E4CC051C77BFDE00D7EA07 /* Info.plist */,
+			);
+			path = DatebuttonsScrollsUITests;
+			sourceTree = "<group>";
+		};
+		A5E4CC111C77C01500D7EA07 /* ButtonDateView */ = {
+			isa = PBXGroup;
+			children = (
+				A5E4CC121C77C09F00D7EA07 /* DateButtonView.swift */,
+				A5E4CC141C77C15000D7EA07 /* DateButtonView.xib */,
+				A5E4CC1C1C792C9300D7EA07 /* ButtonView.swift */,
+				A5E4CC1E1C792DDB00D7EA07 /* ButtonView.xib */,
+			);
+			name = ButtonDateView;
+			sourceTree = "<group>";
+		};
+		A5E4CC161C78F16400D7EA07 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A5E4CC171C78F16800D7EA07 /* UIViews */,
+				A5E4CC1A1C78F31200D7EA07 /* NSObject.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		A5E4CC171C78F16800D7EA07 /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				A5E4CC181C78F1ED00D7EA07 /* UIView.swift */,
+			);
+			name = UIViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5E4CBDF1C77BFDE00D7EA07 /* DatebuttonsScrolls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E4CC081C77BFDE00D7EA07 /* Build configuration list for PBXNativeTarget "DatebuttonsScrolls" */;
+			buildPhases = (
+				A5E4CBDC1C77BFDE00D7EA07 /* Sources */,
+				A5E4CBDD1C77BFDE00D7EA07 /* Frameworks */,
+				A5E4CBDE1C77BFDE00D7EA07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DatebuttonsScrolls;
+			productName = DatebuttonsScrolls;
+			productReference = A5E4CBE01C77BFDE00D7EA07 /* DatebuttonsScrolls.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5E4CBF31C77BFDE00D7EA07 /* DatebuttonsScrollsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E4CC0B1C77BFDE00D7EA07 /* Build configuration list for PBXNativeTarget "DatebuttonsScrollsTests" */;
+			buildPhases = (
+				A5E4CBF01C77BFDE00D7EA07 /* Sources */,
+				A5E4CBF11C77BFDE00D7EA07 /* Frameworks */,
+				A5E4CBF21C77BFDE00D7EA07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5E4CBF61C77BFDE00D7EA07 /* PBXTargetDependency */,
+			);
+			name = DatebuttonsScrollsTests;
+			productName = DatebuttonsScrollsTests;
+			productReference = A5E4CBF41C77BFDE00D7EA07 /* DatebuttonsScrollsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5E4CBFE1C77BFDE00D7EA07 /* DatebuttonsScrollsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E4CC0E1C77BFDE00D7EA07 /* Build configuration list for PBXNativeTarget "DatebuttonsScrollsUITests" */;
+			buildPhases = (
+				A5E4CBFB1C77BFDE00D7EA07 /* Sources */,
+				A5E4CBFC1C77BFDE00D7EA07 /* Frameworks */,
+				A5E4CBFD1C77BFDE00D7EA07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5E4CC011C77BFDE00D7EA07 /* PBXTargetDependency */,
+			);
+			name = DatebuttonsScrollsUITests;
+			productName = DatebuttonsScrollsUITests;
+			productReference = A5E4CBFF1C77BFDE00D7EA07 /* DatebuttonsScrollsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5E4CBD81C77BFDE00D7EA07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Douglas;
+				TargetAttributes = {
+					A5E4CBDF1C77BFDE00D7EA07 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					A5E4CBF31C77BFDE00D7EA07 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = A5E4CBDF1C77BFDE00D7EA07;
+					};
+					A5E4CBFE1C77BFDE00D7EA07 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = A5E4CBDF1C77BFDE00D7EA07;
+					};
+				};
+			};
+			buildConfigurationList = A5E4CBDB1C77BFDE00D7EA07 /* Build configuration list for PBXProject "DatebuttonsScrolls" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5E4CBD71C77BFDE00D7EA07;
+			productRefGroup = A5E4CBE11C77BFDE00D7EA07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5E4CBDF1C77BFDE00D7EA07 /* DatebuttonsScrolls */,
+				A5E4CBF31C77BFDE00D7EA07 /* DatebuttonsScrollsTests */,
+				A5E4CBFE1C77BFDE00D7EA07 /* DatebuttonsScrollsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5E4CBDE1C77BFDE00D7EA07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E4CC151C77C15000D7EA07 /* DateButtonView.xib in Resources */,
+				A5E4CBEE1C77BFDE00D7EA07 /* LaunchScreen.storyboard in Resources */,
+				A5E4CBEB1C77BFDE00D7EA07 /* Assets.xcassets in Resources */,
+				A5E4CC1F1C792DDB00D7EA07 /* ButtonView.xib in Resources */,
+				A5E4CBE91C77BFDE00D7EA07 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E4CBF21C77BFDE00D7EA07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E4CBFD1C77BFDE00D7EA07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5E4CBDC1C77BFDE00D7EA07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E4CC191C78F1ED00D7EA07 /* UIView.swift in Sources */,
+				A5E4CC1D1C792C9300D7EA07 /* ButtonView.swift in Sources */,
+				A5E4CC131C77C09F00D7EA07 /* DateButtonView.swift in Sources */,
+				A5E4CC1B1C78F31200D7EA07 /* NSObject.swift in Sources */,
+				A5E4CBE61C77BFDE00D7EA07 /* ViewController.swift in Sources */,
+				A5E4CBE41C77BFDE00D7EA07 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E4CBF01C77BFDE00D7EA07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E4CBF91C77BFDE00D7EA07 /* DatebuttonsScrollsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E4CBFB1C77BFDE00D7EA07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E4CC041C77BFDE00D7EA07 /* DatebuttonsScrollsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5E4CBF61C77BFDE00D7EA07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5E4CBDF1C77BFDE00D7EA07 /* DatebuttonsScrolls */;
+			targetProxy = A5E4CBF51C77BFDE00D7EA07 /* PBXContainerItemProxy */;
+		};
+		A5E4CC011C77BFDE00D7EA07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5E4CBDF1C77BFDE00D7EA07 /* DatebuttonsScrolls */;
+			targetProxy = A5E4CC001C77BFDE00D7EA07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5E4CBE71C77BFDE00D7EA07 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E4CBE81C77BFDE00D7EA07 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5E4CBEC1C77BFDE00D7EA07 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E4CBED1C77BFDE00D7EA07 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5E4CC061C77BFDE00D7EA07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5E4CC071C77BFDE00D7EA07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5E4CC091C77BFDE00D7EA07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DatebuttonsScrolls/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglas.DatebuttonsScrolls;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A5E4CC0A1C77BFDE00D7EA07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DatebuttonsScrolls/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglas.DatebuttonsScrolls;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A5E4CC0C1C77BFDE00D7EA07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DatebuttonsScrollsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglas.DatebuttonsScrollsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DatebuttonsScrolls.app/DatebuttonsScrolls";
+			};
+			name = Debug;
+		};
+		A5E4CC0D1C77BFDE00D7EA07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DatebuttonsScrollsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglas.DatebuttonsScrollsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DatebuttonsScrolls.app/DatebuttonsScrolls";
+			};
+			name = Release;
+		};
+		A5E4CC0F1C77BFDE00D7EA07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DatebuttonsScrollsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglas.DatebuttonsScrollsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DatebuttonsScrolls;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A5E4CC101C77BFDE00D7EA07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DatebuttonsScrollsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglas.DatebuttonsScrollsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DatebuttonsScrolls;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5E4CBDB1C77BFDE00D7EA07 /* Build configuration list for PBXProject "DatebuttonsScrolls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E4CC061C77BFDE00D7EA07 /* Debug */,
+				A5E4CC071C77BFDE00D7EA07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5E4CC081C77BFDE00D7EA07 /* Build configuration list for PBXNativeTarget "DatebuttonsScrolls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E4CC091C77BFDE00D7EA07 /* Debug */,
+				A5E4CC0A1C77BFDE00D7EA07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5E4CC0B1C77BFDE00D7EA07 /* Build configuration list for PBXNativeTarget "DatebuttonsScrollsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E4CC0C1C77BFDE00D7EA07 /* Debug */,
+				A5E4CC0D1C77BFDE00D7EA07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5E4CC0E1C77BFDE00D7EA07 /* Build configuration list for PBXNativeTarget "DatebuttonsScrollsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E4CC0F1C77BFDE00D7EA07 /* Debug */,
+				A5E4CC101C77BFDE00D7EA07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5E4CBD81C77BFDE00D7EA07 /* Project object */;
+}
