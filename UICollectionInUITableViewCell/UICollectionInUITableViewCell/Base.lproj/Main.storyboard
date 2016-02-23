@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UICollectionInUITableViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QIN-y6-FWH" customClass="DateSliderMenuView" customModule="UICollectionInUITableViewCell" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="iwg-Fh-mdO"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="V64-3g-UIY">
+                                    <size key="itemSize" width="276" height="64"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="DateCollectionViewCell" id="DrN-r6-DeA" customClass="DateCollectionViewCell" customModule="UICollectionInUITableViewCell" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="276" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="276" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ek0-xv-TGG"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7gg-nb-TCn"/>
+                                </connections>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="tOL-g2-adU">
+                                <rect key="frame" x="78" y="318" width="200" height="110"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QIN-y6-FWH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="F2b-ka-sD7"/>
+                            <constraint firstItem="QIN-y6-FWH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="NPx-qT-lZI"/>
+                            <constraint firstAttribute="trailing" secondItem="QIN-y6-FWH" secondAttribute="trailing" id="ygA-0D-3oc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="265"/>
+        </scene>
+    </scenes>
+</document>

@@ -4,16 +4,16 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'DatebuttonsScrolls' do
-  pod 'Quick'
-  pod 'Nimble'
+
 end
 
 target 'DatebuttonsScrollsTests' do
-  pod 'Quick'
   pod 'Nimble'
+	pod 'Quick'
 end
 
 target 'DatebuttonsScrollsUITests' do
+  pod 'KIF', :configurations => ['Debug']
+    pod 'Nimble'
   pod 'Quick'
-  pod 'Nimble'
 end

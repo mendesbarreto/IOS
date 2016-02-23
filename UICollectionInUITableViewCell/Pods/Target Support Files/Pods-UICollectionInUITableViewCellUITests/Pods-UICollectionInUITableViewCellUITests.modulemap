@@ -1,0 +1,6 @@
+framework module Pods_UICollectionInUITableViewCellUITests {
+  umbrella header "Pods-UICollectionInUITableViewCellUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

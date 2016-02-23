@@ -645,6 +645,7 @@
 			baseConfigurationReference = D03734263F469FCCED228C2F /* Pods-DatebuttonsScrolls.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = DatebuttonsScrolls/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -658,6 +659,7 @@
 			baseConfigurationReference = EA111517360645B212FEE66F /* Pods-DatebuttonsScrolls.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = DatebuttonsScrolls/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -671,6 +673,7 @@
 			baseConfigurationReference = 15BF1F331683E68B51311516 /* Pods-DatebuttonsScrollsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = DatebuttonsScrollsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.douglas.DatebuttonsScrollsTests;
@@ -684,6 +687,7 @@
 			baseConfigurationReference = 91BC9432E3567DB747B3CC70 /* Pods-DatebuttonsScrollsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = DatebuttonsScrollsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.douglas.DatebuttonsScrollsTests;
@@ -696,6 +700,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B1D52A436BA8DB237E36FE9D /* Pods-DatebuttonsScrollsUITests.debug.xcconfig */;
 			buildSettings = {
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = DatebuttonsScrollsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.douglas.DatebuttonsScrollsUITests;
@@ -709,6 +714,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 334D59FE5EEFFF1AE44C55A8 /* Pods-DatebuttonsScrollsUITests.release.xcconfig */;
 			buildSettings = {
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = DatebuttonsScrollsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.douglas.DatebuttonsScrollsUITests;

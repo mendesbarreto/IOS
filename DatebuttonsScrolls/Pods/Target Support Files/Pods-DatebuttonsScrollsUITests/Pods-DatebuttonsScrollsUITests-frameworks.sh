@@ -86,6 +86,7 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-DatebuttonsScrollsUITests/Nimble.framework"
   install_framework "Pods-DatebuttonsScrollsUITests/Quick.framework"
+  install_framework "Pods-DatebuttonsScrollsUITests/KIF.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-DatebuttonsScrollsUITests/Nimble.framework"
