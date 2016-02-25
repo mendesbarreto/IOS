@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable public class DaysCollectionViewCell: UICollectionViewCell {
+@IBDesignable public class DayCollectionViewCell: UICollectionViewCell {
 	
 	@IBOutlet public weak var weekDayLabel: UILabel?
 	@IBOutlet public weak var hoursLabel: UILabel?

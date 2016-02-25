@@ -8,13 +8,11 @@
 
 import UIKit
 
-public class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+public class TimeSheetViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
 
 	@IBOutlet public weak var collectionView: UICollectionView?
 	
 	public var weeks:[Week]!
-	
-	public static var v:ViewController!
 	
 	override public func viewDidLoad() {
 		super.viewDidLoad()

@@ -48,8 +48,8 @@ public class DaysUICollectionView: UICollectionView , UICollectionViewDelegateFl
 		self.delegate = self
 		self.dataSource = self
 		
-		let nib = UINib(nibName: "DaysCollectionViewCell", bundle:nil)
-		self.registerNib(nib, forCellWithReuseIdentifier: "DaysCollectionViewCell")
+		let nib = UINib(nibName: "DayCollectionViewCell", bundle:nil)
+		self.registerNib(nib, forCellWithReuseIdentifier: "DayCollectionViewCell")
 		
 		self.backgroundColor = UIColor.whiteColor()
 	}
@@ -60,7 +60,7 @@ public class DaysUICollectionView: UICollectionView , UICollectionViewDelegateFl
 	
 	public func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
 		
-		let dayCell: DaysCollectionViewCell = cell as! DaysCollectionViewCell
+		let dayCell: DayCollectionViewCell = cell as! DayCollectionViewCell
 		
 		if let week = self.week {
 			let weekDay = NSDate().weekday()
@@ -86,7 +86,7 @@ public class DaysUICollectionView: UICollectionView , UICollectionViewDelegateFl
 	
 	
 	public func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-		let cell:DaysCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("DaysCollectionViewCell", forIndexPath: indexPath) as! DaysCollectionViewCell
+		let cell:DayCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("DayCollectionViewCell", forIndexPath: indexPath) as! DayCollectionViewCell
 		
 		
 		//cell.backgroundColor = UIColor.random()
