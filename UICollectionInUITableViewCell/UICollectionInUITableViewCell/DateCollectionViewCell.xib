@@ -32,6 +32,9 @@
                 <constraint firstAttribute="bottom" secondItem="cy2-6l-qlX" secondAttribute="bottom" id="Pbu-Oy-UxJ"/>
             </constraints>
             <size key="customSize" width="682" height="51"/>
+            <connections>
+                <outlet property="collection" destination="cy2-6l-qlX" id="172-eQ-Fmm"/>
+            </connections>
             <point key="canvasLocation" x="582.5" y="98.5"/>
         </collectionViewCell>
     </objects>

@@ -112,6 +112,10 @@
                 <constraint firstAttribute="bottom" secondItem="gQv-RC-ps3" secondAttribute="bottom" id="bic-uG-TW8"/>
                 <constraint firstAttribute="trailing" secondItem="gQv-RC-ps3" secondAttribute="trailing" id="k9H-X0-XTn"/>
             </constraints>
+            <connections>
+                <outlet property="dayNumberLabel" destination="qu8-qA-GOo" id="7ou-UX-nLV"/>
+                <outlet property="weekDayLabel" destination="07r-d6-Wc2" id="2Rc-5W-3FV"/>
+            </connections>
         </collectionViewCell>
     </objects>
 </document>

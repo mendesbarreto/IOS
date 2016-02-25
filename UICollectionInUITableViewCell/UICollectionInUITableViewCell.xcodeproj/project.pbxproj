@@ -12,6 +12,11 @@
 		A5074E0C1C7CED120018DF43 /* DaysCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5074E0A1C7CED120018DF43 /* DaysCollectionViewCell.swift */; };
 		A5074E0D1C7CED120018DF43 /* DaysCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5074E0B1C7CED120018DF43 /* DaysCollectionViewCell.xib */; };
 		A5074E0F1C7CF1890018DF43 /* DaysUICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5074E0E1C7CF1890018DF43 /* DaysUICollectionView.swift */; };
+		A5074E111C7E07F50018DF43 /* NSCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5074E101C7E07F50018DF43 /* NSCalendar.swift */; };
+		A5074E131C7E744E0018DF43 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5074E121C7E744E0018DF43 /* NSDate.swift */; };
+		A5074E151C7E74A70018DF43 /* NSDateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5074E141C7E74A70018DF43 /* NSDateComponents.swift */; };
+		A5074E181C7E75470018DF43 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5074E171C7E75470018DF43 /* Day.swift */; };
+		A5074E1A1C7E75550018DF43 /* Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5074E191C7E75550018DF43 /* Week.swift */; };
 		A50E21431C7A3C1300DE87EC /* DateSliderMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E213F1C7A3C1300DE87EC /* DateSliderMenuView.swift */; };
 		A50E21491C7A3C2900DE87EC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E21471C7A3C2900DE87EC /* UIView.swift */; };
 		A50E214A1C7A3C2900DE87EC /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E21481C7A3C2900DE87EC /* NSObject.swift */; };
@@ -54,6 +59,11 @@
 		A5074E0A1C7CED120018DF43 /* DaysCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysCollectionViewCell.swift; sourceTree = "<group>"; };
 		A5074E0B1C7CED120018DF43 /* DaysCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DaysCollectionViewCell.xib; sourceTree = "<group>"; };
 		A5074E0E1C7CF1890018DF43 /* DaysUICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysUICollectionView.swift; sourceTree = "<group>"; };
+		A5074E101C7E07F50018DF43 /* NSCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCalendar.swift; sourceTree = "<group>"; };
+		A5074E121C7E744E0018DF43 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
+		A5074E141C7E74A70018DF43 /* NSDateComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateComponents.swift; sourceTree = "<group>"; };
+		A5074E171C7E75470018DF43 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		A5074E191C7E75550018DF43 /* Week.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Week.swift; sourceTree = "<group>"; };
 		A50E213F1C7A3C1300DE87EC /* DateSliderMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSliderMenuView.swift; sourceTree = "<group>"; };
 		A50E21471C7A3C2900DE87EC /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		A50E21481C7A3C2900DE87EC /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
@@ -119,6 +129,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A5074E161C7E753C0018DF43 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A5074E171C7E75470018DF43 /* Day.swift */,
+				A5074E191C7E75550018DF43 /* Week.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
 		A50E213D1C7A3BEC00DE87EC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +147,9 @@
 				A50E21551C7A6D0600DE87EC /* CGFloat.swift */,
 				A50E21571C7A712F00DE87EC /* Integer.swift */,
 				A50E21591C7A716300DE87EC /* Randomable.swift */,
+				A5074E101C7E07F50018DF43 /* NSCalendar.swift */,
+				A5074E121C7E744E0018DF43 /* NSDate.swift */,
+				A5074E141C7E74A70018DF43 /* NSDateComponents.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -170,6 +192,7 @@
 		A5D4E61E1C7A39D700700096 /* UICollectionInUITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				A5074E161C7E753C0018DF43 /* Entities */,
 				A50E213E1C7A3C0200DE87EC /* ButtonDateView */,
 				A50E213D1C7A3BEC00DE87EC /* Extensions */,
 				A5D4E61F1C7A39D700700096 /* AppDelegate.swift */,
@@ -425,15 +448,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5074E111C7E07F50018DF43 /* NSCalendar.swift in Sources */,
 				A5074E0C1C7CED120018DF43 /* DaysCollectionViewCell.swift in Sources */,
+				A5074E181C7E75470018DF43 /* Day.swift in Sources */,
 				A50E215A1C7A716300DE87EC /* Randomable.swift in Sources */,
 				A50E21561C7A6D0600DE87EC /* CGFloat.swift in Sources */,
+				A5074E131C7E744E0018DF43 /* NSDate.swift in Sources */,
 				A50E21491C7A3C2900DE87EC /* UIView.swift in Sources */,
 				A5D4E6221C7A39D700700096 /* ViewController.swift in Sources */,
 				A50E214A1C7A3C2900DE87EC /* NSObject.swift in Sources */,
 				A50E21541C7A6CD600DE87EC /* UIColor.swift in Sources */,
 				A5074E0F1C7CF1890018DF43 /* DaysUICollectionView.swift in Sources */,
+				A5074E151C7E74A70018DF43 /* NSDateComponents.swift in Sources */,
 				A50E21511C7A647600DE87EC /* DateCollectionViewCell.swift in Sources */,
+				A5074E1A1C7E75550018DF43 /* Week.swift in Sources */,
 				A5D4E6201C7A39D700700096 /* AppDelegate.swift in Sources */,
 				A50E21581C7A712F00DE87EC /* Integer.swift in Sources */,
 				A50E21431C7A3C1300DE87EC /* DateSliderMenuView.swift in Sources */,

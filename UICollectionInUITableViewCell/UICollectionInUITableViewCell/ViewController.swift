@@ -10,14 +10,16 @@ import UIKit
 
 public class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
 
-	
-	public let colors:Array<UIColor> = [UIColor.blueColor(), UIColor.redColor(),UIColor.yellowColor()]
 	public var collectionView: UICollectionView!
+	
+	public var weeks:[Week]!
 	
 	public static var v:ViewController!
 	
 	override public func viewDidLoad() {
 		super.viewDidLoad()
+		
+		weeks = Week.getWeeks(from: NSDate(), weeksBefore: 2, weeksAfter: 2)
 		
 	}
 
@@ -28,12 +30,34 @@ public class ViewController: UIViewController, UICollectionViewDelegateFlowLayou
 	}
 	
 	public func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return 3
+		return weeks.count
 	}
+	
+	public func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
+		
+		let cell:DateCollectionViewCell = cell as! DateCollectionViewCell
+		
+		if let colletion = cell.collection {
+			let index = indexPath.row
+			let week = weeks[index]
+			print("Index: \(index) Week:\(week.days.first?.date)")
+			colletion.week = week
+			colletion.reloadData()
+		}
+		
+	}
+
  
 	static var i:Int = 0
 	public func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-		let cell:UICollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("DateCollectionViewCell", forIndexPath: indexPath)
+		let cell:DateCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("DateCollectionViewCell", forIndexPath: indexPath) as! DateCollectionViewCell
+		
+//		if let colletion = cell.collection {
+//			let index = indexPath.row
+//			let week = weeks[index]
+//			print("Index: \(index) Week:\(week.days.first?.date)")
+//			colletion.week = week
+//		}
 		
 		cell.backgroundColor = UIColor.random()
 		return cell

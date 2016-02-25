@@ -10,6 +10,8 @@ import UIKit
 
 public class DaysUICollectionView: UICollectionView , UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
 
+	public var week:Week?
+	
 	public override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
 		super.init(frame: frame, collectionViewLayout: layout)
 		self.registerCell()
@@ -54,10 +56,26 @@ public class DaysUICollectionView: UICollectionView , UICollectionViewDelegateFl
 	public func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return 7
 	}
- 
-	static var i:Int = 0
+	
+	
+	
+	public func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
+		
+		let dayCell: DaysCollectionViewCell = cell as! DaysCollectionViewCell
+		
+		if let week = self.week {
+			
+			let day:Day = week.days[indexPath.row]
+			print( day.description() )
+			dayCell.dayNumberLabel?.text = String(day.number)
+			dayCell.weekDayLabel?.text = String(day.name)
+		}
+		
+	}
+	
 	public func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-		let cell:UICollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("DaysCollectionViewCell", forIndexPath: indexPath)
+		let cell:DaysCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("DaysCollectionViewCell", forIndexPath: indexPath) as! DaysCollectionViewCell
+		
 		
 		//cell.backgroundColor = UIColor.random()
 		return cell

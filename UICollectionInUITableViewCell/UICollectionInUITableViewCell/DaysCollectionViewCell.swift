@@ -8,9 +8,13 @@
 
 import UIKit
 
-class DaysCollectionViewCell: UICollectionViewCell {
+public class DaysCollectionViewCell: UICollectionViewCell {
 	
-    override func awakeFromNib() {
+	@IBOutlet public weak var weekDayLabel: UILabel?
+	@IBOutlet public weak var dayNumberLabel: UILabel?
+	
+	
+    override public func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }

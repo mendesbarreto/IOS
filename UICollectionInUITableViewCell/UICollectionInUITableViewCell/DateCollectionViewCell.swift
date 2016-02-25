@@ -11,7 +11,7 @@ import UIKit
 public class DateCollectionViewCell: UICollectionViewCell {
 
 	public var view: UIView!
-	@IBOutlet public weak var stackView:UIStackView?
+	@IBOutlet public weak var collection:DaysUICollectionView?
 	
 	public override init(frame: CGRect) {
 		super.init(frame: frame)
@@ -23,7 +23,7 @@ public class DateCollectionViewCell: UICollectionViewCell {
 	}
 	
 	public func initWithNib() {
-		//view = self.loadFromNib()
+		view = self.loadFromNib()
 		//self.addSubview(view)
 		//view.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
 	}
