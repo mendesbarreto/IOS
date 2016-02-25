@@ -20,7 +20,6 @@ public enum WeekDays: Int {
 	case Saturday = 7
 }
 
-
 // MARK Consts
 let secondsPerDay:Double = 24 * 60 * 60 ;
 let secondsPerWeek:Double = secondsPerDay * 7
@@ -121,6 +120,45 @@ extension NSDate {
 			NSCalendarUnit.Minute,
 			NSCalendarUnit.Second,
 			NSCalendarUnit.Nanosecond], fromDate: self)
+	}
+	
+	func isWeekDay( weekDay:WeekDays ) -> Bool {
+		return self.weekday() == weekDay
+	}
+	
+	func weekDayName( localeIdentifier localeId:String? = nil ) -> String {
+		let dateFormatter = NSDateFormatter()
+		let locale: NSLocale
+		
+		if let localeIdentifier: String = localeId {
+			locale = NSLocale(localeIdentifier: localeIdentifier)
+		} else {
+			if let preferred: String = NSLocale.preferredLanguages().first {
+				locale = NSLocale(localeIdentifier: preferred)
+			} else {
+				locale = NSLocale(localeIdentifier: "pt_br")
+			}
+		}
+		
+		dateFormatter.dateFormat = "EEEE"
+		dateFormatter.locale = locale
+		return dateFormatter.stringFromDate(self)
+	}
+	
+	func weekdayPrefix(length length:Int, localeIdentifier localeId:String? = nil ) -> String {
+		let weekDayName = self.weekDayName(localeIdentifier: localeId)
+		let usedLength: Int
+		let range: Range<String.Index>
+		
+		if( length > weekDayName.characters.count ) {
+			usedLength = weekDayName.characters.count
+		} else {
+			usedLength = length
+		}
+		
+		range = Range<String.Index>(start: weekDayName.startIndex, end: weekDayName.startIndex.advancedBy(usedLength))
+		
+		return weekDayName.substringWithRange(range)
 	}
 	
 }

@@ -72,7 +72,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtf-8b-Brv">
-                                        <rect key="frame" x="0.0" y="49" width="48" height="10"/>
+                                        <rect key="frame" x="0.0" y="52" width="48" height="10"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="10" id="uwE-DW-7qI"/>
                                         </constraints>
@@ -85,9 +85,9 @@
                                 <constraints>
                                     <constraint firstItem="07r-d6-Wc2" firstAttribute="leading" secondItem="v4T-TX-5nf" secondAttribute="leading" id="FG0-Lb-vD4"/>
                                     <constraint firstAttribute="trailing" secondItem="07r-d6-Wc2" secondAttribute="trailing" id="G9Y-mC-z3I"/>
+                                    <constraint firstItem="Jtf-8b-Brv" firstAttribute="top" secondItem="w0Z-Y1-cYR" secondAttribute="bottom" constant="6" id="Q3c-3a-Bcp"/>
                                     <constraint firstItem="07r-d6-Wc2" firstAttribute="top" secondItem="v4T-TX-5nf" secondAttribute="top" id="QPh-97-tcp"/>
                                     <constraint firstItem="w0Z-Y1-cYR" firstAttribute="leading" secondItem="v4T-TX-5nf" secondAttribute="leading" id="ern-D9-uqj"/>
-                                    <constraint firstAttribute="bottom" secondItem="Jtf-8b-Brv" secondAttribute="bottom" constant="5" id="eux-b6-anj"/>
                                     <constraint firstAttribute="trailing" secondItem="w0Z-Y1-cYR" secondAttribute="trailing" id="fzx-XS-6YL"/>
                                     <constraint firstAttribute="trailing" secondItem="Jtf-8b-Brv" secondAttribute="trailing" id="l5X-6d-be5"/>
                                     <constraint firstItem="w0Z-Y1-cYR" firstAttribute="top" secondItem="07r-d6-Wc2" secondAttribute="bottom" constant="5" id="uHg-Ux-g7G"/>
@@ -112,8 +112,27 @@
                 <constraint firstAttribute="bottom" secondItem="gQv-RC-ps3" secondAttribute="bottom" id="bic-uG-TW8"/>
                 <constraint firstAttribute="trailing" secondItem="gQv-RC-ps3" secondAttribute="trailing" id="k9H-X0-XTn"/>
             </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="seletedColor">
+                    <color key="value" red="0.40636939483831758" green="0.52533596424597417" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="seletedShapeColor">
+                    <color key="value" red="0.40636939480000001" green="0.52533596419999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="unselectedShapeColor">
+                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="unselectedTextColor">
+                    <color key="value" red="0.57697296142578125" green="0.55717456340789795" blue="0.5361132025718689" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                    <color key="value" red="0.40636939480000001" green="0.52533596419999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
+                <outlet property="backgroundShpe" destination="Dpz-yn-F02" id="ICr-iP-Ke4"/>
                 <outlet property="dayNumberLabel" destination="qu8-qA-GOo" id="7ou-UX-nLV"/>
+                <outlet property="hoursLabel" destination="Jtf-8b-Brv" id="VQH-bg-2v9"/>
                 <outlet property="weekDayLabel" destination="07r-d6-Wc2" id="2Rc-5W-3FV"/>
             </connections>
         </collectionViewCell>

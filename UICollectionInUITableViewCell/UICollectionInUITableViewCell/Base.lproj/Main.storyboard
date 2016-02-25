@@ -55,6 +55,9 @@
                             <constraint firstAttribute="trailing" secondItem="QIN-y6-FWH" secondAttribute="trailing" id="ygA-0D-3oc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="QIN-y6-FWH" id="adl-cx-nbU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

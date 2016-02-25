@@ -12,6 +12,8 @@ public class DaysUICollectionView: UICollectionView , UICollectionViewDelegateFl
 
 	public var week:Week?
 	
+	//public let signal:Signal<Day> = Signal<Day>()
+	
 	public override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
 		super.init(frame: frame, collectionViewLayout: layout)
 		self.registerCell()
@@ -43,7 +45,6 @@ public class DaysUICollectionView: UICollectionView , UICollectionViewDelegateFl
 //	}
 	
 	public func registerCell() {
-		
 		self.delegate = self
 		self.dataSource = self
 		
@@ -57,21 +58,32 @@ public class DaysUICollectionView: UICollectionView , UICollectionViewDelegateFl
 		return 7
 	}
 	
-	
-	
 	public func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
 		
 		let dayCell: DaysCollectionViewCell = cell as! DaysCollectionViewCell
 		
 		if let week = self.week {
-			
+			let weekDay = NSDate().weekday()
 			let day:Day = week.days[indexPath.row]
-			print( day.description() )
+			//print( day.description() )
 			dayCell.dayNumberLabel?.text = String(day.number)
-			dayCell.weekDayLabel?.text = String(day.name)
+			dayCell.weekDayLabel?.text = String(day.namePrefix)
+			
+			if day.date.isWeekDay(weekDay) {
+				dayCell.selected = true
+				self.selectItemAtIndexPath(indexPath, animated: true, scrollPosition: UICollectionViewScrollPosition.None)
+			}
 		}
 		
 	}
+	
+	public func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+		print(week?.days[indexPath.row].date)
+	}
+	public func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+		
+	}
+	
 	
 	public func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
 		let cell:DaysCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("DaysCollectionViewCell", forIndexPath: indexPath) as! DaysCollectionViewCell

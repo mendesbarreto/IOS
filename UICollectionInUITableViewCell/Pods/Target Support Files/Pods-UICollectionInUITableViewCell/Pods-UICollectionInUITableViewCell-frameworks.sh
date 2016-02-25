@@ -84,12 +84,8 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-UICollectionInUITableViewCellUITests/Signals.framework"
-  install_framework "Pods-UICollectionInUITableViewCellUITests/Nimble.framework"
-  install_framework "Pods-UICollectionInUITableViewCellUITests/Quick.framework"
+  install_framework "Pods-UICollectionInUITableViewCell/Signals.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-UICollectionInUITableViewCellUITests/Signals.framework"
-  install_framework "Pods-UICollectionInUITableViewCellUITests/Nimble.framework"
-  install_framework "Pods-UICollectionInUITableViewCellUITests/Quick.framework"
+  install_framework "Pods-UICollectionInUITableViewCell/Signals.framework"
 fi

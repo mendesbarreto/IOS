@@ -10,6 +10,7 @@ import Foundation
 
 public class Day {
 	public let name: WeekDays
+	public let namePrefix:String
 	public let number:Int
 	public let date: NSDate
 	
@@ -17,6 +18,7 @@ public class Day {
 		self.name = date.weekday()
 		self.number = date.day()
 		self.date = date
+		self.namePrefix = date.weekdayPrefix(length: 3).uppercaseString
 		//self.description()
 	}
 	

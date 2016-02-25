@@ -6,10 +6,11 @@ use_frameworks!
 def testing_pods
     pod 'Quick', '~> 0.9.0'
     pod 'Nimble', '3.0.0'
+    pod 'Signals'
 end
 
 target 'UICollectionInUITableViewCell' do
-
+	pod 'Signals'
 end
 
 target 'UICollectionInUITableViewCellTests' do

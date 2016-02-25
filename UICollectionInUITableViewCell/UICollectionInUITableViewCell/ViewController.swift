@@ -10,7 +10,7 @@ import UIKit
 
 public class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
 
-	public var collectionView: UICollectionView!
+	@IBOutlet public weak var collectionView: UICollectionView?
 	
 	public var weeks:[Week]!
 	
@@ -20,6 +20,7 @@ public class ViewController: UIViewController, UICollectionViewDelegateFlowLayou
 		super.viewDidLoad()
 		
 		weeks = Week.getWeeks(from: NSDate(), weeksBefore: 2, weeksAfter: 2)
+		
 		
 	}
 

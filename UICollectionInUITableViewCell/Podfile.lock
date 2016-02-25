@@ -1,13 +1,16 @@
 PODS:
   - Nimble (3.0.0)
   - Quick (0.9.1)
+  - Signals (2.3.0)
 
 DEPENDENCIES:
   - Nimble (= 3.0.0)
   - Quick (~> 0.9.0)
+  - Signals
 
 SPEC CHECKSUMS:
   Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
   Quick: a5221fc21788b6aeda934805e68b061839bc3165
+  Signals: d47128787e1675858f956556397e482fd667bd96
 
 COCOAPODS: 0.39.0

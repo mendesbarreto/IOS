@@ -112,6 +112,45 @@ extension NSDate {
 			NSCalendarUnit.Nanosecond], fromDate: self)
 	}
 	
+	func weekDayName( localeIdentifier localeId:String? = nil ) -> String {
+		let dateFormatter = NSDateFormatter()
+		let locale: NSLocale
+		
+		if let localeIdentifier: String = localeId {
+			locale = NSLocale(localeIdentifier: localeIdentifier)
+		} else {
+			if let preferred: String = NSLocale.preferredLanguages().first {
+				locale = NSLocale(localeIdentifier: preferred)
+			} else {
+				locale = NSLocale(localeIdentifier: "pt_br")
+			}
+		}
+		
+		dateFormatter.dateFormat = "EEEE"
+		dateFormatter.locale = locale
+		return dateFormatter.stringFromDate(self)
+	}
+	
+	func weekdayPrefix(length length:Int, localeIdentifier localeId:String? = nil ) -> String {
+		let weekDayName = self.weekDayName(localeIdentifier: localeId)
+		let usedLength: Int
+		let range: Range<String.Index>
+		
+		if( length > weekDayName.characters.count ) {
+			usedLength = weekDayName.characters.count
+		} else {
+			usedLength = length
+		}
+		
+		range = Range<String.Index>(start: weekDayName.startIndex, end: weekDayName.startIndex.advancedBy(usedLength))
+		
+		return weekDayName.substringWithRange(range)
+	}
+	
+	func isWeekDay( weekDay:WeekDays ) -> Bool {
+		return self.weekday() == weekDay
+	}
+	
 }
 
 extension NSDateComponents {
@@ -190,6 +229,8 @@ extension NSDateComponents {
 			self.weekday = NSCalendar.currentCalendar().components(NSCalendarUnit.Weekday, fromDate: date).weekday
 		}
 	}
+	
+
 }
 
 public class Day {
@@ -242,5 +283,17 @@ func getWeeks( from date: NSDate, weeksBefore:Int , weeksAfter: Int ) -> [Week] 
 }
 
 let date = NSDate()
-getWeeks(from: date, weeksBefore: 2, weeksAfter: 2)
+date.weekDayName()
+date.weekdayPrefix(length: 3)
+date.weekdayPrefix(length: 3, localeIdentifier: "pt_br")
 
+date.isWeekDay(.Thursday)
+
+
+//NSDateFormatter * dateFormatter = [NSDateFormatter new];
+//NSLocale * locale = [[NSLocale alloc] initWithLocaleIdentifier:deviceLanguage];
+//
+//[dateFormatter setDateFormat:@"EEEE dd MMMM"];
+//[dateFormatter setLocale:locale];
+//
+//NSString * dateString = [dateFormatter stringFromDate:[NSDate date]];

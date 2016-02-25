@@ -33,9 +33,6 @@ public class DateCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
 		
-		
-
-		
     }
 
 }
