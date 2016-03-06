@@ -151,6 +151,12 @@ extension NSDate {
 		return self.weekday() == weekDay
 	}
 	
+	func zeroTime() -> NSDate {
+		let comp = self.createDateComponents()
+		comp.timeZone = NSTimeZone(forSecondsFromGMT: 0)
+		return NSCalendar.currentCalendar().dateBySettingHour(0, minute: 0, second: 0, ofDate: comp.date!, options: NSCalendarOptions())!
+	}
+	
 }
 
 extension NSDateComponents {
@@ -282,12 +288,19 @@ func getWeeks( from date: NSDate, weeksBefore:Int , weeksAfter: Int ) -> [Week] 
 	return weeks
 }
 
-let date = NSDate()
-date.weekDayName()
-date.weekdayPrefix(length: 3)
-date.weekdayPrefix(length: 3, localeIdentifier: "pt_br")
+let date = NSDate().zeroTime()
+let timeZone = NSTimeZone.localTimeZone()
+let seconds = timeZone.secondsFromGMTForDate(date)
+let d = NSDate(timeInterval: NSTimeInterval(seconds), sinceDate: date)
 
-date.isWeekDay(.Thursday)
+date.createDateComponents(components: NSCalendarUnit.Day ).day
+
+//
+//NSTimeZone *tz = [NSTimeZone localTimeZone];
+//NSInteger seconds = [tz secondsFromGMTForDate: self];
+//return [NSDate dateWithTimeInterval: seconds sinceDate: self];
+
+NSDate().zeroTime()
 
 
 //NSDateFormatter * dateFormatter = [NSDateFormatter new];

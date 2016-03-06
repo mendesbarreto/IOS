@@ -1,0 +1,138 @@
+{
+  "data": {
+    "timesheet": {
+      "Projects": [
+        {
+          "id": 2,
+          "name": "Billing",
+          "Activities": [
+            {
+              "id": 500,
+              "name": "Teste Nova Issue",
+              "externalId": "CSB-2",
+              "Roles": [
+                {
+                  "id": 2,
+                  "name": "Programador Pleno",
+                  "TimeEntries": [
+                    {
+                      "id": 48476,
+                      "description": null,
+                      "billable": false,
+                      "minutes": 600,
+                      "status": "ENVIADO",
+                      "date": "2016-02-26T00:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 9565,
+              "name": "UX",
+              "externalId": "CSB-69",
+              "Roles": [
+                {
+                  "id": 2,
+                  "name": "Programador Pleno",
+                  "TimeEntries": [
+                    {
+                      "id": 48469,
+                      "description": null,
+                      "billable": false,
+                      "minutes": 1342,
+                      "status": "ENVIADO",
+                      "date": "2016-02-26T00:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 10196,
+              "name": "Desenvolvimento iOS",
+              "externalId": "CSB-70",
+              "Roles": [
+                {
+                  "id": 2,
+                  "name": "Programador Pleno",
+                  "TimeEntries": [
+                    {
+                      "id": 48453,
+                      "description": null,
+                      "billable": false,
+                      "minutes": 1439,
+                      "status": "ENVIADO",
+                      "date": "2016-02-26T00:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "Client": {
+            "id": 1,
+            "name": "Concrete Solutions"
+          }
+        },
+        {
+          "id": 98,
+          "name": "Mobile PF",
+          "Activities": [
+            {
+              "id": 7972,
+              "name": "Gestão de Produto e Projeto",
+              "externalId": null,
+              "Roles": [
+                {
+                  "id": 3,
+                  "name": "Programador Senior",
+                  "TimeEntries": [
+                    {
+                      "id": 48489,
+                      "description": null,
+                      "billable": true,
+                      "minutes": 480,
+                      "status": "ENVIADO",
+                      "date": "2016-02-26T00:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 7978,
+              "name": "Especificações e documentação executável do produto",
+              "externalId": null,
+              "Roles": [
+                {
+                  "id": 3,
+                  "name": "Programador Senior",
+                  "TimeEntries": [
+                    {
+                      "id": 48482,
+                      "description": null,
+                      "billable": true,
+                      "minutes": 480,
+                      "status": "ENVIADO",
+                      "date": "2016-02-26T00:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "Client": {
+            "id": 23,
+            "name": "Itaú Unibanco"
+          }
+        }
+      ]
+    }
+  },
+  "meta": {
+    "version": "0.10.0",
+    "codeName": "pidgeot"
+  },
+  "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsInZlcnNpb24iOiJERVYifQ.eyJlbWFpbCI6ImRvdWdsYXMuYmFycmV0b0Bjb25jcmV0ZXNvbHV0aW9ucy5jb20uYnIiLCJ1c2VyVHlwZSI6IkZVTkNJT05BUklPIiwicGVybWlzc2lvbiI6bnVsbCwiaWF0IjoxNDU2NTAyOTU2LCJleHAiOjE0NTY1MDY1NTYsImlzcyI6IkNTIEJpbGxpbmcifQ.42iRSfqVOZ2_pCG_xbS5vlIao63Wi7wTmqaLFQHrm2o"
+}
